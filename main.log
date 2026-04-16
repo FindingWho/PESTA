@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.9)  9 APR 2026 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.13)  16 APR 2026 23:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/someone/Documents/PESTA/main.tex
-(/home/someone/Documents/PESTA/main.tex
+**/home/rodrigo/Documents/PESTA/PESTA/main.tex
+(/home/rodrigo/Documents/PESTA/PESTA/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./DEEclass.cls
@@ -91,7 +91,13 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count287
- (/usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-portuguese.tex) (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex) (/usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-portuguese.tex)
+ (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex) (/usr/share/texmf-dist/tex/generic/babel/locale/pt/babel-portuguese.tex) (/usr/share/texmf-dist/tex/generic/babel/locale/en/babel-english.tex)
+Package babel Info: Importing font and identification data for portuguese
+(babel)             from babel-pt.ini. Reported on input line 4330.
+ (/usr/share/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
+Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
+Package babel Info: Making " an active character on input line 132.
+)
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 4330.
  (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
@@ -106,12 +112,6 @@ Package babel Info: Hyphen rules for 'australian' set to \l@english
 (babel)             (\language0). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@english
 (babel)             (\language0). Reported on input line 108.
-)
-Package babel Info: Importing font and identification data for portuguese
-(babel)             from babel-pt.ini. Reported on input line 4330.
- (/usr/share/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
-Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
-Package babel Info: Making " an active character on input line 132.
 )) (/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
  (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
@@ -381,7 +381,7 @@ Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
  (/usr/share/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
  (/usr/share/texmf-dist/tex/generic/tracklang/tracklang.tex)
-Package tracklang Info: Tracking dialect `portuguese' (language `portuges') on input line 53.
+Package tracklang Info: Tracking dialect `english' (language `english') on input line 53.
 ) (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
  (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
@@ -393,7 +393,11 @@ Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 Package tracklang Info: Tracking dialect `portuguese' (language `portuges') on input line 217.
- (/usr/share/texmf-dist/tex/latex/datetime2-portuges/datetime2-portuges.ldf
+ (/usr/share/texmf-dist/tex/latex/datetime2-english/datetime2-english.ldf
+File: datetime2-english.ldf 2019/10/21 v1.05 (NLCT)
+ (/usr/share/texmf-dist/tex/latex/datetime2-english/datetime2-english-base.ldf
+File: datetime2-english-base.ldf 2019/10/21 v1.05 (NLCT)
+)) (/usr/share/texmf-dist/tex/latex/datetime2-portuges/datetime2-portuges.ldf
 File: datetime2-portuges.ldf 2018/08/21 v1.1
  (/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
@@ -492,6 +496,8 @@ Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (|kpsewhich --var-value=TEXMF_OUTPUT_DIRECTORY) (/usr/share/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 LaTeX Info: Redefining \translate on input line 184.
+) (/usr/share/texmf-dist/tex/latex/glossaries-english/glossaries-english.ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
 ) (/usr/share/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuges.ldf
 File: glossaries-portuges.ldf 2014/11/23 v1.0
  (/usr/share/texmf-dist/tex/latex/glossaries-portuges/glossaries-portuges-utf8.ldf)) (/usr/share/texmf-dist/tex/latex/datatool/datatool-base.sty
@@ -589,7 +595,11 @@ File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 \l__datatool_prefix_int=\count386
 \l__datatool_suffix_int=\count387
 \@dtl@foreach@level=\count388
-
+ (/usr/share/texmf-dist/tex/latex/datatool-english/datatool-english.ldf
+File: datatool-english.ldf 2025/03/12 v1.1 (NLCT)
+ (/usr/share/texmf-dist/tex/latex/datatool-english/datatool-english-utf8.ldf
+File: datatool-english-utf8.ldf 2025/03/12 v1.1 (NLCT)
+))
 
 Package tracklang Warning: No `datatool' support for dialect `portuguese'  on input line 9924.
 
@@ -786,6 +796,8 @@ Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks49
 \verbatim@line=\toks50
 \verbatim@in@stream=\read3
+) (/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
@@ -819,10 +831,10 @@ Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 52.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./main.aux (./front/title.aux)
+) (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported on input line 18.
- (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter6.aux) (./chapters/appendixA.aux))
+(babel)             Reported on input line 3.
+) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter6.aux) (./chapters/appendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -875,30 +887,32 @@ Package hyperref Info: Link coloring OFF on input line 52.
 
 \c@lstlisting=\count427
 Package tocbasic Info: setting babel extension for `lol' on input line 52.
-Package translations Info: no dictionary file `translations-basic-dictionary-portuges.trsl' found. on input line 52.
  (/usr/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 52.
-Package scrbase Info: activating portuguese \reftocname on input line 52.
-Package scrbase Info: activating portuguese \degreetemp on input line 52.
-Package scrbase Info: activating portuguese \disclamertemp on input line 52.
-Package scrbase Info: activating portuguese \studentlabel on input line 52.
-Package scrbase Info: activating portuguese \nblabel on input line 52.
-Package scrbase Info: activating portuguese \advisorlabel on input line 52.
-Package scrbase Info: activating portuguese \coadvisorlabel on input line 52.
-Package scrbase Info: activating portuguese \supervisorlabel on input line 52.
-Package scrbase Info: activating portuguese \companylabel on input line 52.
-Package scrbase Info: activating portuguese \acknowledgementname on input line 52.
-Package scrbase Info: activating portuguese \abstractlabel on input line 52.
-Package scrbase Info: activating portuguese \keywordslabel on input line 52.
-Package scrbase Info: activating portuguese \listalgorithmname on input line 52.
-Package scrbase Info: activating portuguese \glossname on input line 52.
-Package scrbase Info: activating portuguese \acronymsname on input line 52.
-Package scrbase Info: activating portuguese \symbolsname on input line 52.
-Package scrbase Info: activating portuguese \symbolsSymbol on input line 52.
-Package scrbase Info: activating portuguese \symbolsDescription on input line 52.
-Package scrbase Info: activating portuguese \symbolsUnits on input line 52.
+Package translations Info: no dictionary file `translations-basic-dictionary-portuges.trsl' found. on input line 52.
+Package scrbase Info: activating english \reftocname on input line 52.
+Package babel Info: 'english' activates 'portuges' shorthands.
+(babel)             Reported on input line 52.
+Package scrbase Info: activating english \degreetemp on input line 52.
+Package scrbase Info: activating english \disclamertemp on input line 52.
+Package scrbase Info: activating english \studentlabel on input line 52.
+Package scrbase Info: activating english \nblabel on input line 52.
+Package scrbase Info: activating english \advisorlabel on input line 52.
+Package scrbase Info: activating english \coadvisorlabel on input line 52.
+Package scrbase Info: activating english \supervisorlabel on input line 52.
+Package scrbase Info: activating english \companylabel on input line 52.
+Package scrbase Info: activating english \acknowledgementname on input line 52.
+Package scrbase Info: activating english \abstractlabel on input line 52.
+Package scrbase Info: activating english \keywordslabel on input line 52.
+Package scrbase Info: activating english \listalgorithmname on input line 52.
+Package scrbase Info: activating english \glossname on input line 52.
+Package scrbase Info: activating english \acronymsname on input line 52.
+Package scrbase Info: activating english \symbolsname on input line 52.
+Package scrbase Info: activating english \symbolsSymbol on input line 52.
+Package scrbase Info: activating english \symbolsDescription on input line 52.
+Package scrbase Info: activating english \symbolsUnits on input line 52.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -938,7 +952,7 @@ Package scrbase Info: activating portuguese \symbolsUnits on input line 52.
 \openout2 = `front/title.aux'.
 
 (./front/title.tex
-<front/isep_wordmark_expanded_vintage.pdf, id=164, 6097.78125pt x 745.35966pt>
+<front/isep_wordmark_expanded_vintage.pdf, id=92, 6097.78125pt x 745.35966pt>
 File: front/isep_wordmark_expanded_vintage.pdf Graphic file (type pdf)
 <use front/isep_wordmark_expanded_vintage.pdf>
 Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input line 6.
@@ -953,14 +967,6 @@ Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./front/isep_wordmark_expanded_vintage.pdf>] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7.
- (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7.
- (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7.
  (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -995,11 +1001,15 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 7.
  (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 7.
+ (/usr/share/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 File: front/isep_wordmark_expanded_vintage.pdf Graphic file (type pdf)
 <use front/isep_wordmark_expanded_vintage.pdf>
 Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input line 7.
 (pdftex.def)             Requested size: 170.71652pt x 20.85855pt.
- [3{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [4
+ [3] [4
 
 ])
 \openout2 = `front/1_dedicatory.aux'.
@@ -1023,7 +1033,7 @@ Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input
 
 ]
 --------------------
- Agradecimentos
+ Acknowledgements
 --------------------
 [7
 
@@ -1034,7 +1044,7 @@ Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input
 
  (./front/3_abstract.tex
 --------------------
- Resumo
+ Abstract
 --------------------
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 30.
@@ -1058,7 +1068,7 @@ l.30 \begin{secondlangabstract}
 
 ]
 --------------------
- Abstract
+ Resumo
 --------------------
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.iii}) has been already used, duplicate ignored
@@ -1080,21 +1090,23 @@ l.5 \tableofcontents
 
 
 
-] (./main.toc
-pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32 ...ne {2.4}Notas Adicionais}{17}{section.2.4}
-                                                  % [5])
+] (./main.toc)
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \listoffigures
+                    			% Prints the list of figures [5]
 pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.11 \listoffigures
-                    			% Prints the list of figures [6] (./main.lof)
+                    			% Prints the list of figures [6
+
+] (./main.lof)
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
@@ -1103,9 +1115,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) has
 <to be read again> 
                    \relax 
 l.13 \listoftables
-                   			% Prints the list of tables [7
-
-]
+                   			% Prints the list of tables [7]
 pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1128,19 +1138,11 @@ l.13 \listoftables
 \tf@loa=\write12
 \openout12 = `main.loa'.
 
- (./main.gls [13] [14
+ (./main.gls) (./main.acr) (./main.syi [13] [14
 
-]) (./main.acr [15
+])) [15
 
-] [16
-
-]) (./main.syi [17
-
-] [18
-
-])) [19
-
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [20
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [16
 
 
 
@@ -1148,182 +1150,77 @@ l.13 \listoftables
 \openout2 = `chapters/chapter1.aux'.
 
  (./chapters/chapter1.tex
-Cap\'{\i }tulo 1.
+Chapter 1.
 [1
 
 
 ]
-Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported on input line 35.
- [2]
-
-Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
-(lipsum)                'portuguese' will be used instead.
-
-[3]) [4]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 61.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) [2{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
 \openout2 = `chapters/chapter2.aux'.
 
  (./chapters/chapter2.tex
-Cap\'{\i }tulo 2.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 3.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 3.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 3.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 19.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 19.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 19.
-[5
-
-
-
-
-] [6]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 60.
- [7] [8] [9]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 149.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 149.
- [10]
-Package epstopdf Info: Source file: <figures/cap2_fig1.eps>
-(epstopdf)                    date: 2020-02-22 16:15:38
-(epstopdf)                    size: 61805 bytes
-(epstopdf)             Output file: <figures/cap2_fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-21 16:16:00
-(epstopdf)                    size: 19827 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/cap2_fig1-eps-converted-to.pdf figures/cap2_fig1.eps>
-(epstopdf)             \includegraphics on input line 194.
-Package epstopdf Info: Output file is already uptodate.
-<figures/cap2_fig1-eps-converted-to.pdf, id=498, 309.155pt x 181.67876pt>
-File: figures/cap2_fig1-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/cap2_fig1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/cap2_fig1-eps-converted-to.pdf  used on input line 194.
-(pdftex.def)             Requested size: 247.32433pt x 145.34319pt.
-Package epstopdf Info: Source file: <figures/cap2_fig1.eps>
-(epstopdf)                    date: 2020-02-22 16:15:38
-(epstopdf)                    size: 61805 bytes
-(epstopdf)             Output file: <figures/cap2_fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-21 16:16:00
-(epstopdf)                    size: 19827 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/cap2_fig1-eps-converted-to.pdf figures/cap2_fig1.eps>
-(epstopdf)             \includegraphics on input line 201.
-Package epstopdf Info: Output file is already uptodate.
-File: figures/cap2_fig1-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/cap2_fig1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/cap2_fig1-eps-converted-to.pdf  used on input line 201.
-(pdftex.def)             Requested size: 179.25114pt x 105.34325pt.
-Package epstopdf Info: Source file: <figures/cap2_fig1.eps>
-(epstopdf)                    date: 2020-02-22 16:15:38
-(epstopdf)                    size: 61805 bytes
-(epstopdf)             Output file: <figures/cap2_fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-21 16:16:00
-(epstopdf)                    size: 19827 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/cap2_fig1-eps-converted-to.pdf figures/cap2_fig1.eps>
-(epstopdf)             \includegraphics on input line 203.
-Package epstopdf Info: Output file is already uptodate.
-File: figures/cap2_fig1-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/cap2_fig1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/cap2_fig1-eps-converted-to.pdf  used on input line 203.
-(pdftex.def)             Requested size: 179.25114pt x 105.34325pt.
- [11
-
- <./figures/cap2_fig1-eps-converted-to.pdf>]
-<figures/Inlinefigureexample.png, id=514, 17.31468pt x 17.31468pt>
-File: figures/Inlinefigureexample.png Graphic file (type png)
-<use figures/Inlinefigureexample.png>
-Package pdftex.def Info: figures/Inlinefigureexample.png  used on input line 210.
-(pdftex.def)             Requested size: 9.67236pt x 9.6723pt.
- [12 <./figures/Inlinefigureexample.png>]
-Package epstopdf Info: Source file: <figures/cap2_fig1.eps>
-(epstopdf)                    date: 2020-02-22 16:15:38
-(epstopdf)                    size: 61805 bytes
-(epstopdf)             Output file: <figures/cap2_fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-02-21 16:16:00
-(epstopdf)                    size: 19827 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/cap2_fig1-eps-converted-to.pdf figures/cap2_fig1.eps>
-(epstopdf)             \includegraphics on input line 227.
-Package epstopdf Info: Output file is already uptodate.
-File: figures/cap2_fig1-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/cap2_fig1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/cap2_fig1-eps-converted-to.pdf  used on input line 227.
-(pdftex.def)             Requested size: 556.47856pt x 327.02148pt.
- [13]
-Overfull \hbox (3.92397pt too wide) in paragraph at lines 271--272
-\T1/lmr/m/n/10.95 dade na cri-a-ção do có-digo para as ta-be-las, sugere-se o \T1/lmr/m/it/10.95 web-site []$\T1/lmtt/m/n/10.95 www . tablesgenerator .
- []
-
-[14
-
-
-] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-)
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 284.
- (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-) [15]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 330.
- [16]) [17]
-\openout2 = `chapters/chapter6.aux'.
-
- (./chapters/chapter6.tex [18
+Chapter 2.
+) [3
 
 
 
 
 ]
-Cap\'{\i }tulo 3.
-[19]) [20] (./main.bbl (./main.brf)
+\openout2 = `chapters/chapter6.aux'.
+
+ (./chapters/chapter6.tex [4
+
+
+
+
+]
+Chapter 3.
+) [5] (./main.bbl (./main.brf)
 \tf@brf=\write13
 \openout13 = `main.brf'.
 
-) [21
+ [6
 
 
 
-]
+]) [7]
 \openout2 = `chapters/appendixA.aux'.
 
- (./chapters/appendixA.tex [22
+ (./chapters/appendixA.tex [8
 
 
 ]
-Anexo A.
-[23]) [24] (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter6.aux) (./chapters/appendixA.aux))
+Appendix A.
+
+Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
+(lipsum)                'english' will be used instead.
+
+[9]) [10] (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter6.aux) (./chapters/appendixA.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9835D3AB970124D4DB7266BB0E612D81;5316.
+(rerunfilecheck)             Checksum: 1A17447A4DF37182A9CD81FE17C02240;2569.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 8C72940DEC94C909825788790D1F2D72;375.
+(rerunfilecheck)             Checksum: 314119F84590CB8E8FED36E29552EFFD;108.
  ) 
 Here is how much of TeX's memory you used:
- 37031 strings out of 469495
- 800737 string characters out of 5470099
- 1651647 words of memory out of 5000000
- 64879 multiletter control sequences out of 15000+600000
- 772292 words of font info for 153 fonts, out of 8000000 for 9000
+ 36273 strings out of 469495
+ 794223 string characters out of 5470098
+ 1432139 words of memory out of 5000000
+ 64237 multiletter control sequences out of 15000+600000
+ 715923 words of font info for 92 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 101i,20n,105p,2568b,1492s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
-
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (52 pages, 580851 bytes).
+ 101i,20n,105p,2574b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (34 pages, 342973 bytes).
 PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 679 compressed objects within 7 object streams
- 179 named destinations out of 1000 (max. 500000)
- 336 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
