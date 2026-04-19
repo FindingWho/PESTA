@@ -6,12 +6,28 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Literature Review}	%Section title
 \label{sec:Ch2.1}
 
+First and foremost, for this acoustic calibration of stethoscopes it was needed to,  understand in which frequencies the cardiopulmonary sounds operate in. This is important to know which frequencies we need to be able to reproduce in our calibration system, and also measure the stethoscope's response.
 
+According to studies, the frequency range of heart sounds is typically between 5 Hz and 600 Hz, while lung sounds can range from 100 Hz to 2000 Hz \cite{tavakoli2021heart}.
+Other studies have also shown that the most important frequencies for heart sounds and diseases are typically between 20 Hz and 150 Hz, while for lung sounds, the most important frequencies are between 100 Hz and 1000 Hz \cite{roy2018heart}. This means that our calibration system should prioritize the ability to reproduce sounds in these frequency ranges, as they are the most relevant for clinical auscultation.
 
+\subsection{Sound Generation Technologies}
+\label{sec:Ch2.1.1}
+
+Traditional audio testing frequently relies on standard dynamic speakers. However, dynamic speakers operate by displacing free air.
+
+Because a medical stethoscope is clinically designed to capture vibrations through high-impedance solid mediums (such as human tissue and fluid), utilizing an air-coupled speaker introduces significant energy loss, particularly in the low-frequency cardiovascular bands (20 Hz - 150 Hz).
+
+To overcome this limitation, modern biomedical testing methodologies require the use of surface transducers or exciters. Instead of pushing air, surface transducers are designed to directly vibrate the solid object to which they are attached. When a surface transducer is mechanically coupled with a tissue-simulating medium (such as silicone or acoustic gelatine), it can accurately replicate the acoustic impedance of a human chest \cite{klum2019validation}.
+
+ollowing the justification for structure-borne sound converters, three commercially available surface transducers were selected for evaluation in this project:
+\begin{itemize}
+    \item \textbf{Dayton Audio TT25-8 PUCK:} This is a compact, high-performance tactile transducer designed for low-frequency applications. It can produce strong vibrations in the 20 Hz to 80 Hz range and comes at a price range of around 19€. 
+    \item \textbf{Dayton Audio HDN-8 Weatherproof:} This is a high-performance, weatherproof tactile transducer designed for outdoor use. It can produce strong vibrations in the 20 Hz to 80 Hz range and comes at a price range of around 25€.
+    \item \textbf{Dayton Audio DAEX25FHE-4:} This is a compact and affordable exciter with a frequency response of 70 Hz to 20 kHz and comes at a price range of around 15€.
+\end{itemize}

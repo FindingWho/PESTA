@@ -39,10 +39,14 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 1
 
-\section{Contextualização}
+\section{State of the Art/Contextualization}	%Section title
 \label{sec:Ch1.1}
 
-Stethoscopes remain the most fundamental and prevasive diagnostic tools in clinical practice for the auscultation of cardiopulmonary and vascular sounds. Currently, traditional acoustic stethoscopes dominate over 90\% of the global market due to their high durability, low cost, and independence from electrical power sources \cite{market_report_2022}. However, purely acoustic auscultation is inherently limited not only by the fallibility of human auditory perception but also by the unrecognized physical degradation of the instrument over time. Studies have demonstrated that general practitioners miss up to 57\% of significant valvular heart diseases when relying on standard stethoscopes \cite{gardezi2017cardiac}. While frequently attributed to human auditory limitations, this high error rate may be significantly compounded by unnoticed material failures—such as compromised acoustic seals in the eartips, hardened tubing, or worn diaphragms. These physical degradations silently alter the stethoscope's frequency response, attenuating vital low-frequency biological sounds before they ever reach the clinician's ear. To mitigate these human diagnostic errors, the medical field is experiencing the gradual emergence of electronic stethoscopes designed to amplify, filter, and digitize biological sounds. This technological shift, while clinically beneficial, introduces a critical new engineering problem: these electronic devices actively alter and process the raw audio signal. Because both the acoustic	 integrity of traditional tubing and the digital processing of modern devices directly impact diagnostic accuracy, the development of a precise calibration system to verify signal fidelity has never been more urgent.
+Stethoscopes remain the most fundamental and prevasive diagnostic tools in clinical practice for the auscultation of cardiopulmonary and vascular sounds. Currently, traditional acoustic stethoscopes dominate over 90\% of the global market due to their high durability, low cost, and independence from electrical power sources \cite{market_report_2022}. However, purely acoustic auscultation is inherently limited not only by the fallibility of human auditory perception but also by the unrecognized physical degradation of the instrument over time. Studies have demonstrated that general practitioners miss up to 57\% of significant valvular heart diseases when relying on standard stethoscopes \cite{gardezi2017cardiac}. 
+
+While frequently attributed to human auditory limitations, this high error rate may be significantly composed by unnoticed material failures; such as compromised acoustic seals in the eartips, hardened tubing, or worn diaphragms. These physical degradations silently alter the stethoscope's frequency response, attenuating vital low-frequency biological sounds before they ever reach the clinician's ear. To mitigate these human diagnostic errors, the medical field is experiencing the gradual emergence of electronic stethoscopes designed to amplify, filter, and digitize biological sounds.
+
+This technological shift, while clinically beneficial, introduces a critical new engineering problem: these electronic devices actively alter and process the raw audio signal. Because both the acoustic	 integrity of traditional tubing and the digital processing of modern devices directly impact diagnostic accuracy, the development of a precise calibration system to verify signal fidelity has never been more urgent.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SECTION 2
 
@@ -58,7 +62,7 @@ This project proposes the development of an acoustic calibration system designed
 
 By the end of the project, the developed system should be able to:
 \begin{itemize}
-	\item \textbf{Simulate Cardiopulmonary Acoustics:} Generate controlled acoustic signals that mimic the frequency spectrum of biological sounds, particularly in the 20 Hz to 2 kHz range critical for cardiopulmonary auscultation.
+	\item \textbf{Simulate Cardiopulmonary Acoustics:} Generate controlled acoustic signals that mimic the frequency spectrum of biological sounds, particularly in the frequency range for cardiopulmonary auscultation.
 	\item \textbf{Capture High-Fidelity Audio Data:} Accurately measure the stethoscope's output signal using a high-fidelity microphone and data acquisition system, ensuring that the measurement setup itself does not introduce significant distortions.
 	\item \textbf{Analyze Frequency Response:} Analyze the acquired audio data to compute the stethoscope's frequency response curve utilizing python-based spectral analysis techniques.
 	\item \textbf{Establish a Repeatable Protocol:} Develop a standardized testing protocol that can be easily replicated for routine stethoscope calibration in clinical settings, ensuring consistent and reliable performance assessments.

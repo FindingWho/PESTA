@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.13)  16 APR 2026 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.13)  19 APR 2026 15:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -831,10 +831,10 @@ Package csquotes Info: ... found 'babel' package.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 52.
  (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux
+) (./main.aux (./front/title.aux) (./front/3_abstract.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
 (babel)             Reported on input line 3.
-) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter6.aux) (./chapters/appendixA.aux))
+) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -952,7 +952,7 @@ Package scrbase Info: activating english \symbolsUnits on input line 52.
 \openout2 = `front/title.aux'.
 
 (./front/title.tex
-<front/isep_wordmark_expanded_vintage.pdf, id=92, 6097.78125pt x 745.35966pt>
+<front/isep_wordmark_expanded_vintage.pdf, id=72, 6097.78125pt x 745.35966pt>
 File: front/isep_wordmark_expanded_vintage.pdf Graphic file (type pdf)
 <use front/isep_wordmark_expanded_vintage.pdf>
 Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input line 6.
@@ -1012,34 +1012,6 @@ Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input
  [3] [4
 
 ])
-\openout2 = `front/1_dedicatory.aux'.
-
- (./front/1_dedicatory.tex
---------------------
- Dedicatory
---------------------
-) [5
-
-
-
-
-]
-\openout2 = `front/2_acknowledgements.aux'.
-
- (./front/2_acknowledgements.tex [6
-
-
-
-
-]
---------------------
- Acknowledgements
---------------------
-[7
-
-] [8
-
-])
 \openout2 = `front/3_abstract.aux'.
 
  (./front/3_abstract.tex
@@ -1094,33 +1066,13 @@ l.5 \tableofcontents
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.v}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.11 \listoffigures
-                    			% Prints the list of figures [5]
-pdfTeX warning (ext4): destination with the same identifier (name{page.vi}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.11 \listoffigures
-                    			% Prints the list of figures [6
+ [5] [6
 
 ] (./main.lof)
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.vii}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.13 \listoftables
-                   			% Prints the list of tables [7]
-pdfTeX warning (ext4): destination with the same identifier (name{page.viii}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.13 \listoftables
-                   			% Prints the list of tables [8
+ [7] [8
 
 ] (./main.lot)
 \tf@lot=\write10
@@ -1155,7 +1107,7 @@ Chapter 1.
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 65.
  (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )) [2{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
@@ -1163,64 +1115,42 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
  (./chapters/chapter2.tex
 Chapter 2.
-) [3
+[3
 
 
 
 
-]
-\openout2 = `chapters/chapter6.aux'.
-
- (./chapters/chapter6.tex [4
-
-
-
-
-]
-Chapter 3.
-) [5] (./main.bbl (./main.brf)
+]) [4] (./main.bbl (./main.brf)
 \tf@brf=\write13
 \openout13 = `main.brf'.
 
- [6
+) [5
 
 
 
-]) [7]
-\openout2 = `chapters/appendixA.aux'.
-
- (./chapters/appendixA.tex [8
-
-
-]
-Appendix A.
-
-Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
-(lipsum)                'english' will be used instead.
-
-[9]) [10] (./main.aux (./front/title.aux) (./front/1_dedicatory.aux) (./front/2_acknowledgements.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter6.aux) (./chapters/appendixA.aux))
+] (./main.aux (./front/title.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1A17447A4DF37182A9CD81FE17C02240;2569.
+(rerunfilecheck)             Checksum: 3CFFBE7608821C409FB9ABC150D2F91C;2055.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 314119F84590CB8E8FED36E29552EFFD;108.
+(rerunfilecheck)             Checksum: 9F692062554AF6734AB41E79D9DF8231;270.
  ) 
 Here is how much of TeX's memory you used:
- 36273 strings out of 469495
- 794223 string characters out of 5470098
- 1432139 words of memory out of 5000000
- 64237 multiletter control sequences out of 15000+600000
+ 36170 strings out of 469495
+ 790911 string characters out of 5470098
+ 1431103 words of memory out of 5000000
+ 64172 multiletter control sequences out of 15000+600000
  715923 words of font info for 92 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 101i,20n,105p,2574b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,20n,105p,2574b,1291s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (34 pages, 342973 bytes).
+Output written on main.pdf (25 pages, 342104 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 

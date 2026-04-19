@@ -2,54 +2,50 @@ This is BibTeX, Version 0.99e (TeX Live 2026/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: front/title.aux
-A level-1 auxiliary file: front/1_dedicatory.aux
-A level-1 auxiliary file: front/2_acknowledgements.aux
 A level-1 auxiliary file: front/3_abstract.aux
 A level-1 auxiliary file: front/4_frontmatterlists.aux
 A level-1 auxiliary file: chapters/chapter1.aux
 A level-1 auxiliary file: chapters/chapter2.aux
-A level-1 auxiliary file: chapters/chapter6.aux
 The style file: ieeetr.bst
-A level-1 auxiliary file: chapters/appendixA.aux
 Database file #1: sampleRefs.bib
-You've used 3 entries,
+You've used 6 entries,
             1876 wiz_defined-function locations,
-            504 strings with 4426 characters,
-and the built_in function-call counts, 544 in all, are:
-= -- 40
-> -- 38
+            522 strings with 4834 characters,
+and the built_in function-call counts, 1494 in all, are:
+= -- 142
+> -- 65
 < -- 0
-+ -- 14
-- -- 11
-* -- 43
-:= -- 101
-add.period$ -- 4
-call.type$ -- 3
-change.case$ -- 3
++ -- 24
+- -- 18
+* -- 104
+:= -- 224
+add.period$ -- 7
+call.type$ -- 6
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 22
-empty$ -- 53
-format.name$ -- 11
-if$ -- 120
+cite$ -- 6
+duplicate$ -- 76
+empty$ -- 144
+format.name$ -- 18
+if$ -- 362
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 3
-pop$ -- 12
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 22
+num.names$ -- 6
+pop$ -- 20
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 5
+skip$ -- 49
 stack$ -- 0
-substring$ -- 0
-swap$ -- 2
+substring$ -- 72
+swap$ -- 29
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 3
-width$ -- 4
-write$ -- 30
+while$ -- 13
+width$ -- 7
+write$ -- 62
