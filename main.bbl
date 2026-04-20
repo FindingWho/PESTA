@@ -19,4 +19,10 @@ J.~K. Roy, T.~S. Roy, and S.~C. Mukhopadhyay, ``Heart sound: Detection and analy
 \bibitem{klum2019validation}
 M.~Klum {\em et~al.}, ``Validation system for digital stethoscopes,'' {\em Current Directions in Biomedical Engineering}, vol.~5, no.~1, pp.~261--264, 2019.
 
+\bibitem{zhang2022class}
+Y.~Zhang {\em et~al.}, ``The class d audio power amplifier: A review,'' {\em Electronics}, vol.~11, no.~19, p.~3244, 2022.
+
+\bibitem{duraij2021comparative}
+M.~Duraij {\em et~al.}, ``A comparative study on class ab and class d amplifier topologies,'' in {\em 2021 IEEE International Symposium on Power Line Communications and its Applications (ISPLC)}, pp.~1--6, IEEE, 2021.
+
 \end{thebibliography}
