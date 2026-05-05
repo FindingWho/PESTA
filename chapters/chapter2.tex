@@ -106,7 +106,7 @@ Three pervasive operational amplifiers were evaluated for this signal conditioni
         \toprule
         \textbf{Parameter} & \textbf{NE5532P} & \textbf{TL072} & \textbf{Relevance to Calibration Rig} \\
         \midrule
-        \textbf{Input Architecture} & BJT (Bipolar) & JFET & JFETs offer higher input impedance, but BJTs offer lower voltage noise. \\
+        \textbf{Input Architecture} & BJT & JFET & JFETs offer higher input impedance, but BJTs offer lower voltage noise. \\
         \vspace{0.1cm} \\
         \textbf{Equivalent Input Noise} & 5 nV/$\sqrt{\text{Hz}}$ & 18 nV/$\sqrt{\text{Hz}}$ & NE5532 is significantly quieter, crucial for capturing faint respiratory crackles without static. \\
         \vspace{0.1cm} \\
@@ -134,3 +134,78 @@ Two primary digital conversion architectures were evaluated:
     
     \item \textbf{Dedicated Audio ADC (16-bit USB Interface):} 
 \end{itemize}
+
+\section{Test Rig Design}
+
+\begin{figure}[htpb]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+        >=Stealth,
+        % Define styles
+        pc/.style={rectangle, draw, thick, rounded corners, fill=green!5, text width=3cm, align=center, minimum height=7cm},
+        elec/.style={rectangle, draw, thick, rounded corners, fill=blue!5, text width=3.2cm, align=center, minimum height=1.5cm},
+        mech/.style={rectangle, draw, thick, rounded corners, fill=orange!5, text width=3.2cm, align=center, minimum height=1.5cm},
+        signal/.style={->, thick},
+        acoustic/.style={->, thick, dashed}
+    ]
+
+    % 1. Place the PC first
+    \node [pc] (laptop) {\textbf{Central Control PC} \\ \vspace{0.2cm} \small Signal Generation \\ \& \\ DSP Analysis};
+
+    % 2. Place ADC to the right of the bottom half of the PC
+    \node [elec, right=1.5cm of laptop.south east, anchor=south west, yshift=1cm] (adc) {\textbf{16-Bit USB ADC} \\ \small Dedicated Interface};
+
+    % 3. Place Pre-Amp right of ADC
+    \node [elec, right=1.2cm of adc] (preamp) {\textbf{Pre-Amplifier} \\ \small NE5532P (Op-Amp)};
+
+    % 4. Place Power Amp right of top half of PC, perfectly ALIGNED vertically with Pre-Amp
+    \node [elec, above=2.5cm of preamp] (poweramp) {\textbf{Power Amplifier} \\ \small TDA2030A (Class-AB)};
+
+    % 5. Place Exciter right of Power Amp
+    \node [elec, right=1.2cm of poweramp] (exciter) {\textbf{Surface Exciter} \\ \small Dayton DAEX25};
+    
+    % 6. Place Mic below Exciter (aligned on grid)
+    \node [mech, below=2.5cm of exciter] (mic) {\textbf{ECM Capsule} \\ \small -35 dB Sensitivity};
+
+    % 7. Place Chestpiece right of Exciter
+    \node [mech, right=1.2cm of exciter] (chestpiece) {\textbf{Stethoscope} \\ \small Chestpiece Diaphragm};
+
+    % 8. Place Eartip below Chestpiece (aligned on grid)
+    \node [mech, below=2.5cm of chestpiece] (eartip) {\textbf{Stethoscope} \\ \small Eartip Tube};
+
+    % --- Routing Lines & Labels ---
+    
+    % PC to Generation (Forced perfectly horizontal using coordinate projection |-)
+    \draw [signal] (laptop.east |- poweramp.west) -- node[above]{\small $V_{out}$ (DAC)} (poweramp.west);
+    
+    % Internal electrical routing
+    \draw [signal] (poweramp.east) -- node[above]{\small Amplified AC} (exciter.west);
+
+    % Acoustic Coupling (Dashed)
+    \draw [acoustic] (exciter.east) -- node[above, text width=2cm, align=center]{\small Acoustic \\ Silicone} (chestpiece.west);
+    \draw [acoustic] (chestpiece.south) -- node[right]{\small Acoustic Tube} (eartip.north);
+    \draw [acoustic] (eartip.west) -- node[above, text width=2cm, align=center]{\small Airtight \\ 3D Adapter} (mic.east);
+
+    % Acquisition back to PC (Forced perfectly horizontal using coordinate projection |-)
+    \draw [signal] (mic.west) -- node[above]{\small mV Signal} (preamp.east);
+    \draw [signal] (preamp.west) -- node[above]{\small Line Level} (adc.east);
+    \draw [signal] (adc.west) -- node[above]{\small USB Data} (laptop.east |- adc.west);
+
+    % --- Grouping Boxes ---
+    \begin{scope}[on background layer]
+        % Generation Box
+        \node[draw, dotted, thick, inner sep=0.3cm, fit=(poweramp)(exciter), label={[anchor=south, inner sep=0pt]above:\textbf{Sound Generation Stage}}] {};
+        
+        % Mechanical Box
+        \node[draw, dotted, thick, inner sep=0.3cm, fit=(chestpiece)(eartip), label={[anchor=south, inner sep=0pt]above:\textbf{Mechanical Domain}}] {};
+        
+        % Acquisition Box
+        \node[draw, dotted, thick, inner sep=0.3cm, fit=(adc)(preamp)(mic), label={[anchor=north, inner sep=0pt]below:\textbf{Sound Acquisition Stage}}] {};
+    \end{scope}
+
+    \end{tikzpicture}
+    }
+    \caption{Block diagram of the proposed physical calibration rig, detailing the complete electrical and mechanical signal path.}
+    \label{fig:hardware_block_diagram}
+\end{figure}

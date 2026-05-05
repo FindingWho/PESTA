@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.9)  20 APR 2026 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.13)  24 APR 2026 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/someone/Documents/PESTA/main.tex
-(/home/someone/Documents/PESTA/main.tex
+**/home/rodrigo/Documents/PESTA/PESTA/main.tex
+(/home/rodrigo/Documents/PESTA/PESTA/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./DEEclass.cls
@@ -1017,7 +1017,19 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count444
 \l__lipsum_a_int=\count445
 \l__lipsum_b_int=\count446
- (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)))
+ (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@layerbox@background=\box90
+\pgf@layerboxsaved@background=\box91
+))
 runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed safely (allowed).
 
 runsystem(makeindex -s main.ist -t main.alg -o main.acr main.acn)...executed safely (allowed).
@@ -1071,7 +1083,7 @@ LaTeX Font Info:    ... okay on input line 52.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count447
 \scratchdimen=\dimen362
-\scratchbox=\box90
+\scratchbox=\box92
 \nofMPsegments=\count448
 \nofMParguments=\count449
 \everyMPshowfont=\toks59
@@ -1164,7 +1176,7 @@ Package scrbase Info: activating english \symbolsUnits on input line 52.
 \openout2 = `front/title.aux'.
 
 (./front/title.tex
-<front/isep_wordmark_expanded_vintage.pdf, id=91, 6097.78125pt x 745.35966pt>
+<front/isep_wordmark_expanded_vintage.pdf, id=95, 6097.78125pt x 745.35966pt>
 File: front/isep_wordmark_expanded_vintage.pdf Graphic file (type pdf)
 <use front/isep_wordmark_expanded_vintage.pdf>
 Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input line 6.
@@ -1381,11 +1393,18 @@ Underfull \hbox (badness 4378) in paragraph at lines 115--116
  []
 
 
-Overfull \hbox (53.64507pt too wide) in paragraph at lines 105--119
+Overfull \hbox (36.64265pt too wide) in paragraph at lines 105--119
  [][] 
  []
 
-[7]) [8] (./main.bbl (./main.brf)
+[7]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 208.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 208.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 208.
+) [8] (./main.bbl (./main.brf)
 \tf@brf=\write14
 \openout14 = `main.brf'.
 
@@ -1399,23 +1418,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 716969169215AD58B434732C73E2CB36;2895.
+(rerunfilecheck)             Checksum: C64397C5C4A452D1D51340B06CD1F542;3031.
 Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 70727D92882E613276381CEE53D4BF02;381.
  ) 
 Here is how much of TeX's memory you used:
- 64191 strings out of 469495
- 1555374 string characters out of 5470099
- 2439880 words of memory out of 5000000
- 91939 multiletter control sequences out of 15000+600000
- 721903 words of font info for 94 fonts, out of 8000000 for 9000
+ 65029 strings out of 469495
+ 1575815 string characters out of 5470098
+ 2468936 words of memory out of 5000000
+ 92751 multiletter control sequences out of 15000+600000
+ 734429 words of font info for 112 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 101i,20n,105p,2568b,1291s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (29 pages, 363452 bytes).
+ 101i,20n,105p,2582b,1291s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (29 pages, 371220 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 410 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
