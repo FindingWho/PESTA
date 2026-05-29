@@ -1,7 +1,7 @@
-PWD /home/rodrigo/Documents/PESTA/PESTA
+PWD /home/someone/Documents/PESTA
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/rodrigo/Documents/PESTA/PESTA/main.tex
+INPUT /home/someone/Documents/PESTA/main.tex
 OUTPUT main.log
 INPUT ./DEEclass.cls
 INPUT DEEclass.cls
@@ -694,6 +694,15 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmbx10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmbx7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmbx5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmib10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmib7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmib5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmbsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmbsy7.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmbsy5.tfm
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
@@ -724,6 +733,7 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT ./main.brf
 INPUT ./main.brf
+INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
