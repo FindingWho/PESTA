@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.4.9)  29 MAY 2026 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 SEP 2026 15:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,7 +1058,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./main.aux (./front/title.aux) (./front/3_abstract.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
 (babel)             Reported on input line 3.
-) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux))
+) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -1176,7 +1176,7 @@ Package scrbase Info: activating english \symbolsUnits on input line 52.
 \openout2 = `front/title.aux'.
 
 (./front/title.tex
-<front/isep_wordmark_expanded_vintage.pdf, id=95, 6097.78125pt x 745.35966pt>
+<front/isep_wordmark_expanded_vintage.pdf, id=115, 6097.78125pt x 745.35966pt>
 File: front/isep_wordmark_expanded_vintage.pdf Graphic file (type pdf)
 <use front/isep_wordmark_expanded_vintage.pdf>
 Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input line 6.
@@ -1296,7 +1296,7 @@ l.5 \tableofcontents
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [7] [8
+ [7{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [8
 
 ] (./main.lot)
 \tf@lot=\write11
@@ -1318,7 +1318,7 @@ l.5 \tableofcontents
 
 ])) [15
 
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [16
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [16
 
 
 
@@ -1331,7 +1331,7 @@ Chapter 1.
 
 
 ]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 65.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 68.
  (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )) [2{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
@@ -1339,112 +1339,160 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
  (./chapters/chapter2.tex
 Chapter 2.
-[3
+) [3
 
 
 
 
-] [4]
-Overfull \hbox (3.70363pt too wide) in paragraph at lines 59--60
-[]\T1/lmr/bx/n/10.95 MEMS (Micro-Electro-Mechanical Sys-tems) Mi-cro-phones: \T1/lmr/m/n/10.95 Com-monly
+]
+\openout2 = `chapters/chapter3.aux'.
+
+ (./chapters/chapter3.tex [4
+
+
+
+
+]
+Chapter 3.
+
+Underfull \hbox (badness 5490) in paragraph at lines 33--34
+[]|\T1/lmr/m/n/10.95 Acoustic en-ergy must be de-liv-ered via a sur-
  []
 
 
-Overfull \hbox (33.791pt too wide) in paragraph at lines 70--81
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\T1/lmr/m/n/10.95 Digital Sig-nal Pro-cess-ing
+ []
+
+
+Overfull \hbox (25.19994pt too wide) in paragraph at lines 27--42
+ [][] 
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/10.95 Nyquist-Compliant Sam-
+ []
+
+
+Overfull \hbox (25.19994pt too wide) in paragraph at lines 53--66
+ [][] 
+ []
+
+[6]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 145.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 145.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 145.
+ [7] [8]
+
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 283.
+
+
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 283.
+
+
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 283.
+
+
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 283.
+
+
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 283.
+
+
+Overfull \hbox (3.70363pt too wide) in paragraph at lines 296--297
+[]\T1/lmr/bx/n/10.95 MEMS (Micro-Electro-Mechanical Sys-tems) Mi-cro-phones: \T1/lmr/m/n/10.95 Com-monly
+ []
+
+[9]
+Overfull \hbox (33.791pt too wide) in paragraph at lines 307--318
  [][] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5]
-Overfull \hbox (3.52428pt too wide) in paragraph at lines 89--90
+Overfull \hbox (3.52428pt too wide) in paragraph at lines 326--327
 []\T1/lmr/m/n/10.95 Despite se-lect-ing a high-sensitivity Elec-tret Con-denser Mi-cro-phone (-35 dBV/Pa),
  []
 
-[6]
-Underfull \hbox (badness 7759) in paragraph at lines 109--110
+[10]
+Underfull \hbox (badness 7759) in paragraph at lines 346--347
 []|\T1/lmr/m/n/10.95 JFETs of-fer higher in-put
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 109--110
+Underfull \hbox (badness 1721) in paragraph at lines 346--347
 \T1/lmr/m/n/10.95 impedance, but BJTs of-fer
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 111--112
+Underfull \hbox (badness 3579) in paragraph at lines 348--349
 \T1/lmr/m/n/10.95 eter, cru-cial for cap-tur-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 \T1/lmr/m/n/10.95 faint res-pi-ra-tory crack-les
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 115--116
+Underfull \hbox (badness 4726) in paragraph at lines 352--353
 []|\T1/lmr/m/n/10.95 Both are more than suf-
  []
 
 
-Underfull \hbox (badness 4378) in paragraph at lines 115--116
+Underfull \hbox (badness 4378) in paragraph at lines 352--353
 \T1/lmr/m/n/10.95 fi-cient to ac-cu-rately track
  []
 
 
-Overfull \hbox (36.64265pt too wide) in paragraph at lines 105--119
+Overfull \hbox (36.64265pt too wide) in paragraph at lines 342--356
  [][] 
  []
 
-[7]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 208.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 208.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 208.
+[11]
+
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 442.
 
 
-Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 262.
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 442.
 
 
-Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 262.
+Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 442.
 
-
-Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 262.
-
-) [8] (./main.bbl (./main.brf)
+[12]) [13] (./main.bbl (./main.brf)
 \tf@brf=\write14
 \openout14 = `main.brf'.
 
-) [9
+ [14
 
 
 
-] (./main.aux (./front/title.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux))
+]) [15] (./main.aux (./front/title.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D2797F184D37BE5EC290222004E79E94;3031.
+(rerunfilecheck)             Checksum: 72E688E4E9788AABF910E5322BA97717;3846.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 70727D92882E613276381CEE53D4BF02;381.
+(rerunfilecheck)             Checksum: F88313BAD01D0F1E3D343C7D9D22B90A;280.
  ) 
 Here is how much of TeX's memory you used:
- 65699 strings out of 469495
- 1595234 string characters out of 5470099
- 2489936 words of memory out of 5000000
- 93411 multiletter control sequences out of 15000+600000
- 745218 words of font info for 121 fonts, out of 8000000 for 9000
+ 66435 strings out of 469495
+ 1618080 string characters out of 5470098
+ 2493936 words of memory out of 5000000
+ 94126 multiletter control sequences out of 15000+600000
+ 751191 words of font info for 123 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  101i,20n,105p,2576b,1291s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (29 pages, 380840 bytes).
+</usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (35 pages, 400970 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 486 PDF objects out of 1000 (max. 8388607)
+ 402 compressed objects within 5 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

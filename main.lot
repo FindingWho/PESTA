@@ -3,5 +3,8 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Conversion of Microphone Sensitivity (dBV/Pa) to Raw Voltage Output (mV/Pa)}}{6}{table.caption.14}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Datasheet Specification Comparison: NE5532P vs. TL072}}{7}{table.caption.16}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Functional requirements for the integrated system.}}{6}{table.caption.13}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Non-functional performance constraints and hardware specifications.}}{6}{table.caption.14}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Conversion of Microphone Sensitivity (dBV/Pa) to Raw Voltage Output (mV/Pa)}}{10}{table.caption.18}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Datasheet Specification Comparison: NE5532P vs. TL072}}{12}{table.caption.20}%
