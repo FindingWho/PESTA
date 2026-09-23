@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 SEP 2026 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.6.4)  7 SEP 2026 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/someone/Documents/PESTA/main.tex
-(/home/someone/Documents/PESTA/main.tex
+**/home/rodrigo/Documents/PESTA/PESTA/main.tex
+(/home/rodrigo/Documents/PESTA/PESTA/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (./DEEclass.cls
@@ -1482,12 +1482,12 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  66435 strings out of 469495
- 1618080 string characters out of 5470098
+ 1618098 string characters out of 5470099
  2493936 words of memory out of 5000000
  94126 multiletter control sequences out of 15000+600000
  751191 words of font info for 123 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 101i,20n,105p,2576b,1291s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,20n,105p,2582b,1291s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
 Output written on main.pdf (35 pages, 400970 bytes).
 PDF statistics:
