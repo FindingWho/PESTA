@@ -1,7 +1,7 @@
-PWD /home/someone/Documents/PESTA
+PWD /home/rodrigo/Documents/PESTA/PESTA
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/someone/Documents/PESTA/main.tex
+INPUT /home/rodrigo/Documents/PESTA/PESTA/main.tex
 OUTPUT main.log
 INPUT ./DEEclass.cls
 INPUT DEEclass.cls

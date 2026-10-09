@@ -1,4 +1,5 @@
 # Fdb version 4
+<<<<<<< HEAD
 ["bibtex main"] 1788951469.73969 "main.aux" "main.bbl" "main" 1788953877.51424 0
   "./sampleRefs.bib" 1788822953.15528 4810 b54f90c398205c92db38536e9a47232f ""
   "/usr/share/texmf-dist/bibtex/bst/base/ieeetr.bst" 1775415801 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
@@ -10,12 +11,29 @@
   "front/4_frontmatterlists.aux" 1788953876.82663 1659 8a7f30c06a2fad658c210770126a7960 "pdflatex"
   "front/title.aux" 1788953876.70647 1243 02a8db9aa3e0d9f4da992f40c92471d4 "pdflatex"
   "main.aux" 1788953877.33647 1171 308d7c37a5476b65a8ac5ad47c843a5d "pdflatex"
+=======
+["bibtex main"] 1788532905.16482 "main.aux" "main.bbl" "main" 1788813160.26436 0
+  "./sampleRefs.bib" 1777047567.63283 2801 563a3d90c00428da4ef6127d946af62f ""
+  "/usr/share/texmf-dist/bibtex/bst/base/ieeetr.bst" 1775415801 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
+  "chapters/chapter1.aux" 1788813157.52719 2284 db11ee2b59ca99a47d8d62a6f4d64e68 "pdflatex"
+  "chapters/chapter2.aux" 1788813157.56719 1675 69e12878b15b66fa10b49a0c1391dd28 "pdflatex"
+  "chapters/chapter3.aux" 1788813159.4042 6452 e184102d354bf5cf083cbdcef1f28cbf "pdflatex"
+  "front/3_abstract.aux" 1788813156.92118 1295 97ac45a48686ab7785df62543c744038 "pdflatex"
+  "front/4_frontmatterlists.aux" 1788813157.37218 1857 d9d9516ab1f489ee7a7e208111cba813 "pdflatex"
+  "front/title.aux" 1788813156.84718 1243 02a8db9aa3e0d9f4da992f40c92471d4 "pdflatex"
+  "main.aux" 1788813159.4972 1195 1df5086117dcd62a601dd1a02973b349 "pdflatex"
+>>>>>>> a965a998eb16c18b408cd7ee344d35fa06085902
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
+<<<<<<< HEAD
 ["pdflatex"] 1788953875.41251 "/home/someone/Documents/PESTA/main.tex" "main.pdf" "main" 1788953877.51455 0
   "/home/someone/Documents/PESTA/main.tex" 1788837532.97325 4739 ad22832632b31b56f8882fada09b8225 ""
+=======
+["pdflatex"] 1788813151.89378 "/home/rodrigo/Documents/PESTA/PESTA/main.tex" "main.pdf" "main" 1788813160.26518 0
+  "/home/rodrigo/Documents/PESTA/PESTA/main.tex" 1788813071.56271 4809 12924cf4cfce25ddffac712b9a0cc1f4 ""
+>>>>>>> a965a998eb16c18b408cd7ee344d35fa06085902
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1775415801 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1775415801 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1775415801 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -339,6 +357,7 @@
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1775415801 5006 d7e899bb5d9717c7f214e9bc0284de7b ""
   "/usr/share/texmf-dist/tex/latex/xpatch/xpatch.sty" 1775415801 8314 7803f78066c4f9d008405191a4b43073 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
+<<<<<<< HEAD
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1780232818 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1780232811 3086428 530e31bcbcb680b7796c2b4e0fc3b5c5 ""
   "DEEclass.cls" 1775748921.49517 29464 f85dfa3d006ad7ec7e55d1867408e67c ""
@@ -379,6 +398,44 @@
   "main.tex" 1788837532.97325 4739 ad22832632b31b56f8882fada09b8225 ""
   "main.toc" 1788953877.34231 2590 cdad82464ba4961226cc906a22c817d9 "pdflatex"
   "preamble.tex" 1777984624.30183 1737 0d95627156bf4368b314a49e97938787 ""
+=======
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1780590552 5385779 47c0c393a77fd4a098bacfd57d66b88a ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1780590462 3086426 32edf9d5badc22fa4bdca13847cb1bbf ""
+  "DEEclass.cls" 1776094033.89156 29464 f85dfa3d006ad7ec7e55d1867408e67c ""
+  "chapters/chapter1.aux" 1788813157.52719 2284 db11ee2b59ca99a47d8d62a6f4d64e68 "pdflatex"
+  "chapters/chapter1.tex" 1788813071.54976 8250 33502b70eb906f834daf4f39dc28169c ""
+  "chapters/chapter2.aux" 1788813157.56719 1675 69e12878b15b66fa10b49a0c1391dd28 "pdflatex"
+  "chapters/chapter2.tex" 1788813071.55067 331 57a0458e6d0817472fdecc891ad5c69d ""
+  "chapters/chapter3.aux" 1788813159.4042 6452 e184102d354bf5cf083cbdcef1f28cbf "pdflatex"
+  "chapters/chapter3.tex" 1788813071.55119 31637 9444b6e3a089917e49781de522146b4f ""
+  "front/0_acronyms.tex" 1776094033.89211 1135 dd092a6722cb5615192c7db8e0b58e67 ""
+  "front/0_glossary.tex" 1776094033.89256 1291 17cfd11ce64d889d2d6a46aeb2314c18 ""
+  "front/0_symbols.tex" 1776094033.89256 1404 15febb91dec6d5e44b0bb7f3962e0842 ""
+  "front/3_abstract.aux" 1788813156.92118 1295 97ac45a48686ab7785df62543c744038 "pdflatex"
+  "front/3_abstract.tex" 1776094033.89265 3503 ec29acea62007badc3d4802d37bbaa95 ""
+  "front/4_frontmatterlists.aux" 1788813157.37218 1857 d9d9516ab1f489ee7a7e208111cba813 "pdflatex"
+  "front/4_frontmatterlists.tex" 1776094033.89265 970 04596ca0b3b7aadf5e2d6afd9c467813 ""
+  "front/isep_wordmark_expanded_vintage.pdf" 1776094033.89265 4523 efd97238a18ec72481503b2e6bf0d301 ""
+  "front/title.aux" 1788813156.84718 1243 02a8db9aa3e0d9f4da992f40c92471d4 "pdflatex"
+  "front/title.tex" 1776094033.89265 372 a5addb966ea8c1e96ea31c813e5bcfbe ""
+  "main.acn" 1788813156.28618 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.acr" 1788813156.19518 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.aux" 1788813159.4972 1195 1df5086117dcd62a601dd1a02973b349 "pdflatex"
+  "main.bbl" 1788813071.55119 1221 ee3c913c9c3e0f0316f681c4b9debc24 "bibtex main"
+  "main.brf" 1788813159.5172 280 f88313bad01d0f1e3d343c7d9d22b90a "pdflatex"
+  "main.glo" 1788813156.28618 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.gls" 1788813156.11018 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "main.loa" 1788813159.5192 158 370a51506e92caed94438e4aa958d8ac "pdflatex"
+  "main.lof" 1788813159.5192 896 15b94db38c9fa25d885edc45fc750a8a "pdflatex"
+  "main.lol" 1788813159.5192 158 370a51506e92caed94438e4aa958d8ac "pdflatex"
+  "main.lot" 1788813159.5192 716 b979f04853310376726fe36ebc38d89e "pdflatex"
+  "main.out" 1788813159.5162 3846 72e688e4e9788aabf910e5322ba97717 "pdflatex"
+  "main.syg" 1788813159.5185 1126 0178acaa009a2ea3dd3586ceb8423942 "pdflatex"
+  "main.syi" 1788813156.28418 1554 49421491f338b9305f9dcfde8b9054c8 ""
+  "main.tex" 1788813071.56271 4809 12924cf4cfce25ddffac712b9a0cc1f4 ""
+  "main.toc" 1788813159.5192 1850 922503c8d38c29ffdd549c7b021edc40 "pdflatex"
+  "preamble.tex" 1777048978.93179 1737 0d95627156bf4368b314a49e97938787 ""
+>>>>>>> a965a998eb16c18b408cd7ee344d35fa06085902
   (generated)
   "chapters/chapter1.aux"
   "chapters/chapter2.aux"
