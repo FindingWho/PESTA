@@ -58,7 +58,7 @@ Non-functional requirements dictate the electronic precision, noise limits, and 
         \hline
         Ultra-Low Input Noise Floor & The pre-amplifier stage must introduce minimal equivalent input noise ($e_n \le 5\text{ nV}/\sqrt{\text{Hz}}$) to resolve faint biological sounds such as pulmonary crackles. \\
         \hline
-        Nyquist-Compliant Sampling & The ADC stage must sample at a minimum rate of $44.1\text{ kHz}$ with at least 16-bit resolution to prevent quantization error and aliasing. \\
+        Nyquist-Compliant Sampling & The ADC stage must sample at a minimum rate of $44.1\text{ kHz}$ with at least 12-bit resolution to prevent quantization error and aliasing. \\
         \hline
         Measurement Repeatability & The physical coupler and elastomer medium must allow different stethoscope models to be tested under identical mechanical loading conditions. \\
         \hline
@@ -70,11 +70,11 @@ Non-functional requirements dictate the electronic precision, noise limits, and 
 
 To satisfy the functional and non-functional requirements established in Section \ref{sec:requirements}, the calibration rig is divided into three interconnected domains: the \textit{Sound Generation Stage}, the \textit{Mechanical Domain}, and the \textit{Sound Acquisition Stage}. Figure \ref{fig:hardware_block_diagram} illustrates the complete electromechanical signal path of the proposed architecture.
 
-The signal path originates at the \textbf{Central Control PC}, where a digital reference waveform is converted to an analog signal ($V_{out}$) via a digital-to-analog converter (DAC). This signal drives a custom discrete Class-AB power amplifier based on the TDA2030A integrated circuit, which provides the linear current necessary to excite the Dayton Audio DAEX25 surface exciter without introducing high-frequency switching artifacts.
+The signal path originates at the \textbf{Central Control PC}, where a digital reference waveform is converted to an analog signal ($V_{out}$) via a digital-to-analog converter (DAC). This signal drives a custom discrete Class-AB power amplifier based on the TDA2030 integrated circuit, which provides the linear current necessary to excite the Dayton Audio DAEX25 surface exciter without introducing high-frequency switching artifacts.
 
-Within the \textit{Mechanical Domain}, the exciter transfers structure-borne vibrations through a silicone elastomer phantom into the stethoscope's chestpiece. The acoustic wave travels through the stethoscope's internal acoustic tube to the eartip, where it is captured by a $-35\text{ dB}$ Electret Condenser Microphone (ECM) capsule housed within a compliant physical coupler designed to ensure an airtight acoustic seal.
+Within the \textit{Mechanical Domain}, the exciter transfers structure-borne vibrations through a silicone elastomer phantom into the stethoscope's chestpiece. The acoustic wave travels through the stethoscope's internal acoustic tube to the eartip, where it is captured by a $-40\text{ dB}$ Electret Condenser Microphone (ECM) capsule housed within a compliant physical coupler designed to ensure an airtight acoustic seal.
 
-Finally, in the \textit{Sound Acquisition Stage}, the microvolt-level signal produced by the ECM capsule is conditioned by an ultra-low-noise NE5532P pre-amplifier circuit. The boosted line-level signal is digitized by a dedicated 16-bit USB Analog-to-Digital Converter and transmitted back to the Central Control PC for Fast Fourier Transform (FFT) and spectral analysis.
+Finally, in the \textit{Sound Acquisition Stage}, the microvolt-level signal produced by the ECM capsule is conditioned by an ultra-low-noise pre-amplifier circuit. The boosted line-level signal is digitized by a dedicated 12-bit USB Analog-to-Digital Converter and transmitted back to the Central Control PC for Fast Fourier Transform (FFT) and spectral analysis.
 
 % --- INSERT YOUR TIKZ BLOCK DIAGRAM FIGURE HERE ---
 
@@ -98,14 +98,14 @@ Finally, in the \textit{Sound Acquisition Stage}, the microvolt-level signal pro
     \node [pc] (laptop) {\textbf{Central Control PC} \\ \vspace{0.3cm} \small Signal Generation \\ \& \\ DSP Analysis};
 
     % 2. Bottom row: Acquisition path (right-to-left flow)
-    \node [elec, right=1.8cm of laptop.south east, anchor=south west, yshift=0.8cm] (adc) {\textbf{16-Bit USB ADC} \\ \small Dedicated Interface};
-    \node [elec, right=2.0cm of adc] (preamp) {\textbf{Pre-Amplifier} \\ \small NE5532P (Op-Amp)};
-    \node [mech, right=2.2cm of preamp] (mic) {\textbf{ECM Capsule} \\ \small -35 dB Sensitivity};
+    \node [elec, right=1.8cm of laptop.south east, anchor=south west, yshift=0.8cm] (adc) {\textbf{12-Bit USB ADC} \\ \small Dedicated Interface};
+    \node [elec, right=2.0cm of adc] (preamp) {\textbf{Pre-Amplifier} \\ \small (Op-Amp)};
+    \node [mech, right=2.2cm of preamp] (mic) {\textbf{ECM Capsule} \\ \small -40 dB Sensitivity};
     \node [mech, right=2.2cm of mic] (eartip) {\textbf{Stethoscope} \\ \small Eartip Tube};
 
     % 3. Top row: Generation & Mechanical Chestpiece
     % Power Amp is shifted 1.5cm right of the ADC to give V_out (DAC) plenty of breathing room
-    \node [elec, above=3.5cm of adc, xshift=1.5cm] (poweramp) {\textbf{Power Amplifier} \\ \small TDA2030A (Class-AB)};
+    \node [elec, above=3.5cm of adc, xshift=1.5cm] (poweramp) {\textbf{Power Amplifier} \\ \small TDA2030 (Class-AB)};
     % Chestpiece is aligned directly above the Eartip to lock the right column
     \node [mech, above=3.5cm of eartip] (chestpiece) {\textbf{Stethoscope} \\ \small Chestpiece Diaphragm};
     % Exciter is automatically placed dead-center between Power Amp and Chestpiece
@@ -182,20 +182,20 @@ Two primary amplifier topologies were evaluated for the physical test rig:
 \begin{itemize}
     \item \textbf{Class-D Amplifiers (e.g., PAM8403 / TPA3116):} Class-D modules operate utilizing PWM. While extremely affordable and capable of operating on standard 5V USB power, the digital switching nature of Class-D topologies introduces high-frequency switching noise and poorer inherent linearity \cite{zhang2022class}.
     
-    \item \textbf{Class-AB Amplifiers (e.g., TDA2030A / LM1875):} Class-AB amplifier provides a continuous, highly linear analog output, ensuring a pure analog signal path across the entire target frequency spectrum. Literature demonstrates that Class-AB topologies consistently outperform Class-D stages in Total Harmonic Distortion (THD) metrics, frequently achieving distortion figures up to 30 dB better than their digital counterparts \cite{duraij2021comparative}.
+    \item \textbf{Class-AB Amplifiers (e.g., TDA2030 / LM1875):} Class-AB amplifier provides a continuous, highly linear analog output, ensuring a pure analog signal path across the entire target frequency spectrum. Literature demonstrates that Class-AB topologies consistently outperform Class-D stages in Total Harmonic Distortion (THD) metrics, frequently achieving distortion figures up to 30 dB better than their digital counterparts \cite{duraij2021comparative}.
 \end{itemize}
 
-To ensure the acoustic reference signal remained free of high-frequency digital artifacts and low-frequency attenuation, the \textbf{Class-AB TDA2030A} IC was selected. It comes at a highly cost-effective price point of around 2€.
+To ensure the acoustic reference signal remained free of high-frequency digital artifacts and low-frequency attenuation, the \textbf{Class-AB TDA2030} IC was selected. It comes at a highly cost-effective price point of around 2€.
 
-The TDA2030A was then integrated into a power amplifier circuit to provide sufficient current to drive the Dayton Audio DAEX25FHE-4 exciter without introducing clipping or harmonic distortion.
+The TDA2030 was then integrated into a power amplifier circuit to provide sufficient current to drive the Dayton Audio DAEX25FHE-4 exciter without introducing clipping or harmonic distortion.
 
 \begin{figure}[H]
     \centering
     \resizebox{\textwidth}{!}{%
     \begin{circuitikz}[american, scale=1.0, transform shape]
-        % TDA2030A Op-Amp
+        % TDA2030 Op-Amp
         \draw (0,0) node[op amp, noinv input up] (opamp) {};
-        \node[right=0.2cm, yshift=-0.3cm] at (opamp.center) {\textbf{TDA2030A}};
+        \node[right=0.2cm, yshift=-0.3cm] at (opamp.center) {\textbf{TDA2030}};
 
         % PHYSICAL PIN NUMBERS
         \node[above left=-1pt] at (opamp.+) {\small 1};
@@ -281,7 +281,7 @@ The TDA2030A was then integrated into a power amplifier circuit to provide suffi
 
     \end{circuitikz}
     }
-    \caption{Final layout of the custom TDA2030A power amplifier, featuring perfect dynamic coordinate alignment and a spacious decoupling layout.}
+    \caption{TDA2030 Module Schematic.}
     \label{fig:tda_schematic}
 \end{figure}
 
@@ -302,158 +302,50 @@ Given the low-frequency requirements of cardiopulmonary auscultation, a 6 mm ECM
 
 \begin{table}[h]
     \centering
-    \caption{Conversion of Microphone Sensitivity (dBV/Pa) to Raw Voltage Output (mV/Pa)}
+    \caption{Comparison of microphone sensitivity and voltage output for different ECM capsules.}
     \vspace{0.2cm}
     \begin{tabular}{lcc}
         \toprule
         \textbf{Microphone Example} & \textbf{Sensitivity (dBV/Pa)} & \textbf{Voltage Output (mV/Pa)} \\
         \midrule
         Generic Low-Cost ECM & -60 dB & 1.00 mV \\
-        High-Sensitivity ECM & -40 dB & 10.00 mV \\
-        \textbf{Selected Prototype ECM} & \textbf{-35 dB} & \textbf{17.78 mV} \\
+        \textbf{High-Sensitivity ECM} & \textbf{-40 dB} & \textbf{10.00 mV} \\
         Premium Measurement Mic & -20 dB & 100.00 mV \\
         \bottomrule
     \end{tabular}
     \label{tab:sensitivity_voltage}
 \end{table}
 
-As demonstrated in Table \ref{tab:sensitivity_voltage}, microphone sensitivity operates on a logarithmic scale. A Generic Electret Condenser Microphone rated at -60 dB outputs approximately 1.00 millivolts per Pascal of acoustic pressure. By acquiring a higher sensitivity capsule rated at -35 dB, the electrical output increases drastically to 17.78 millivolts per Pascal, yielding a signal almost 18 times stronger for the exact same acoustic event.
+As demonstrated in Table \ref{tab:sensitivity_voltage}, microphone sensitivity operates on a logarithmic scale. A Generic Electret Condenser Microphone rated at -60 dB outputs approximately 1.00 millivolts per Pascal of acoustic pressure. By acquiring a higher sensitivity capsule rated at -40 dB, the electrical output increases drastically to 10 millivolts per Pascal, yielding a signal almost 10 times stronger for the exact same acoustic event.
 
 This stronger signal reduces the gain requirements for the subsequent ADC pre-amplification stage, therefore minimizing the amplification of inherent electronic noise and improving the overall Signal-to-Noise Ratio (SNR) of the acquired data.
 
 \subsubsection{Pre-Amplifier}
 
-Despite selecting a high-sensitivity Electret Condenser Microphone (-35 dBV/Pa), the raw analog output generated by cardiopulmonary acoustics remains in the low millivolt range. To prevent quantization error and signal loss during analog-to-digital conversion, the microphone's output must be conditioned and boosted using a dedicated pre-amplifier stage. The selection of the Operational Amplifier (Op-Amp) for this stage is highly critical, as any inherent electronic noise introduced here will be amplified and permanently embedded into the acquired acoustic data.
+Despite selecting a high-sensitivity Electret Condenser Microphone (-40 dBV/Pa), the raw analog output generated by cardiopulmonary acoustics remains in the low millivolt range. To prevent quantization error and signal loss during analog-to-digital conversion, the microphone's output must be conditioned and boosted using a dedicated pre-amplifier stage. 
 
-Three pervasive operational amplifiers were evaluated for this signal conditioning stage:
+To address the extremely low amplitude of physiological sounds, the transducer was interfaced with a MAX9814 microphone amplifier module. The MAX9814 was selected for its integrated low-noise preamplifier and Automatic Gain Control (AGC) circuitry. The AGC dynamically compresses loud ambient noises while maximizing sensitivity to faint biological signals, which is critical for unpredictable clinical environments. The module was powered via the 3.3 V rail of the microcontroller, and its gain pin was tied high to lock the amplification at 40 dB, providing an optimal balance between signal enhancement and ambient noise floor rejection.
 
-\begin{itemize}
-    \item \textbf{LM358 (General Purpose Op-Amp):} While exceptionally affordable and common in basic microcontroller kits, the LM358 is a general-purpose operational amplifier not intended for high-fidelity audio applications. It suffers from significant crossover distortion and possesses a relatively high input noise profile, making it unsuitable for capturing delicate, low-amplitude respiratory frequencies.
-    
-    \item \textbf{TL072 (JFET-Input Op-Amp):} The TL072 is a widely utilized, audio-grade Op-Amp commonly found in electronic stethoscope designs. Its JFET inputs provide high input impedance, and it boasts a low Total Harmonic Distortion (THD) profile alongside a low noise floor (typically 18 nV/$\sqrt{\text{Hz}}$). It is an excellent, low-cost option for general biological signal amplification.
-    
-    \item \textbf{NE5532P (Ultra-Low Noise Audio Op-Amp):} The NE5532 is historically considered the industry standard for professional audio pre-amplification. It features a high slew rate and an ultra-low noise floor (typically 5 nV/$\sqrt{\text{Hz}}$). While it draws slightly more quiescent current than the TL072, it offers superior linear performance and exceptionally clean gain across the entire 20 Hz to 20 kHz spectrum.
-\end{itemize}
+Because cardiopulmonary acoustics are alternating current (AC) waveforms, the signal required a precise direct current (DC) bias to be accurately read by the single-supply analog-to-digital converter. The MAX9814 outputs a resting DC bias of 1.25 V. To safely center the waveform for the microcontroller, a voltage divider network was constructed using two 100 k$\Omega$ resistors between the 3.3 V supply and ground, establishing a stable 1.65 V to 1.8 V reference node. 
 
-\begin{table}[H]
-    \centering
-    \caption{Datasheet Specification Comparison: NE5532P vs. TL072}
-    \vspace{0.2cm}
-    \begin{tabular}{lccp{5cm}}
-        \toprule
-        \textbf{Parameter} & \textbf{NE5532P} & \textbf{TL072} & \textbf{Relevance to Calibration Rig} \\
-        \midrule
-        \textbf{Input Architecture} & BJT & JFET & JFETs offer higher input impedance, but BJTs offer lower voltage noise. \\
-        \vspace{0.1cm} \\
-        \textbf{Equivalent Input Noise} & 5 nV/$\sqrt{\text{Hz}}$ & 18 nV/$\sqrt{\text{Hz}}$ & NE5532 is significantly quieter, crucial for capturing faint respiratory crackles without static. \\
-        \vspace{0.1cm} \\
-        \textbf{Gain Bandwidth (GBW)} & 10 MHz & 3 MHz & Both exceed the 20 kHz requirement, but NE5532 offers more linear gain at higher frequencies. \\
-        \vspace{0.1cm} \\
-        \textbf{Slew Rate} & 9 V/$\mu$s & 13 V/$\mu$s & Both are more than sufficient to accurately track rapid acoustic transients (e.g., S1/S2 heart valves snapping shut). \\
-        \bottomrule
-    \end{tabular}
-    \label{tab:opamp_comparison}
-\end{table}
+A 10 $\mu$F electrolytic coupling capacitor was placed in series between the MAX9814 output and the voltage divider. This capacitor acts as a DC block, preventing the 1.25 V bias of the amplifier from colliding with the 1.8 V bias of the microcontroller node, while allowing the AC biological audio frequencies to pass through unimpeded.
 
-As detailed in Table \ref{tab:opamp_comparison}, both operational amplifiers possess technical specifications that easily satisfy the baseline requirements for cardiopulmonary acoustic processing.
+\subsubsection{Hardware Anti-Aliasing Filter}
+To prevent high-frequency environmental noise and digital aliasing from corrupting the target cardiopulmonary data, a passive resistor-capacitor (RC) low-pass filter was engineered directly at the microcontroller input. The target acoustic bandwidth for heart and lung sounds spans from 20 Hz to 2000 Hz. A 5.6 k$\Omega$ series resistor and a 10 nF ceramic capacitor were selected to construct the filter. The cutoff frequency ($f_c$) was calculated using the standard RC filter equation:
 
-The primary  challenge of this acquisition stage is the noise mitigation when amplifying the microvolt-level signals of faint respiratory anomalies. The NE5532P reduces the equivalent input noise down to 5 nV/$\sqrt{\text{Hz}}$, less than a third of the noise generated by the TL072. Given the necessity to capture low-amplitude anomalies, such as pulmonary crackles, without introducing electronic interference, the \textbf{NE5532P} was selected as the optimal Op-Amp for the pre-amplifier circuit. It comes at a highly cost-effective price point of around 1€.
+\begin{equation}
+f_c = \frac{1}{2 \pi R C}
+\end{equation}
 
-The NE5532P was then integrated into a pre-amplihadwarefier circuit to boost the millivolt-level output of the ECM capsule to line-level voltages suitable for digitization by the ADC.
+\begin{equation}
+f_c = \frac{1}{2 \pi (5600\ \Omega) (10 \times 10^{-9}\text{ F})} \approx 2842\text{ Hz}
+\end{equation}
 
-\begin{figure}[H]
-    \centering
-    \resizebox{\textwidth}{!}{%
-    \begin{circuitikz}[american, scale=1.0, transform shape]
-        % NE5532P Op-Amp with NON-INVERTING INPUT ON TOP (noinv input up)
-        \draw (0,0) node[op amp, noinv input up] (opamp) {};
-        \node[right=0.2cm, yshift=0.1cm] at (opamp.center) {\textbf{NE5532P}};
+This 2842 Hz cutoff frequency acts as an acoustic window. It allows 100\% of the 2000 Hz medical bandwidth to pass into the ADC mathematically untouched, while aggressively attenuating high-frequency room static and serial transmission noise.
+\subsection{Signal Digitization and Transmission}
+Following the analog signal conditioning stage, the acoustic data must be digitized for computational analysis. Signal digitization was executed using an \textbf{ESP32 microcontroller}, leveraging its internal 12-bit Analog-to-Digital Converter (ADC). This ADC resolution allows the biological waveform to be mapped across 4096 discrete voltage steps. 
 
-        % Pin Labels (Standard DIP-8 Pinout for Amplifier A)
-        \node[left=1pt] at (opamp.+) {\small 3};
-        \node[left=1pt] at (opamp.-) {\small 2};
-        \node[above left=1pt] at (opamp.out) {\small 1};
+A critical limitation in digital auscultation is the Nyquist sampling theorem, which dictates that the sampling rate must be at least twice the highest frequency of interest to prevent data loss. To accurately visualize a 2000 Hz cardiopulmonary spectrogram, a minimum sampling rate of 4000 Hz was strictly required. Standard serial communication speeds create a data bottleneck, physically capping the sampling rate and blinding the software to the upper diagnostic frequencies. To overcome this limitation, the ESP32 serial baud rate was set to 500,000 bps, and the loop delay to 50 microseconds. This optimization successfully pushed the hardware sampling rate well above the 4000 Hz threshold, fulfilling the Nyquist criteria for the entire lung sound bandwidth.
 
-        % =========================================================
-        % --- POWER PINS (Clean, minimalist connection) ---
-        % =========================================================
-        \draw (opamp.up) -- (opamp.up |- 0,2.0) node[vcc] {$+12\text{V}$ (Pin 8)};
-        \draw (opamp.down) -- (opamp.down |- 0,-1.4) node[ground, label={[font=\small]right:(Pin 4)}] {};
-
-        % =========================================================
-        % --- TOP-LEFT: NON-INVERTING (+) INPUT STAGE ---
-        % =========================================================
-        \draw (opamp.+) -- (-4.5,0.5) coordinate (div_node);
-        
-        % Single-supply DC bias divider (100k up to +12V, 100k down to GND)
-        % Labels forced RIGHT (l=) away from RF cap!
-        \draw (div_node) to[R, l=$100\text{ k}\Omega$] (-4.5,3.0) node[vcc] {$+12\text{V}$};
-        \draw (div_node) to[R, l=$100\text{ k}\Omega$] (-4.5,-2.2) node[ground] {};
-        
-        % 200 pF RF-Filtering Capacitor at x = -7.2 (2.7-unit gap from divider!)
-        \draw (div_node) -- (-7.2,0.5) coordinate (rf_node);
-        \draw (rf_node) to[C, l_=$200\text{ pF}$] (-7.2,-2.2) node[ground] {};
-        
-        % Input Coupling Cap (5.6 uF) across x = -10.5 to x = -7.2
-        \draw (rf_node) to[pC, l_=$5.6\ \mu\text{F}$] (-10.5,0.5) coordinate (mic_node);
-        
-        % ECM Capsule Biasing at x = -10.5
-        \draw (mic_node) to[R, l=$2.2\text{ k}\Omega$] (-10.5,3.0) node[vcc] {$+12\text{V}$};
-        \draw (mic_node) to[sV, l_=\textbf{ECM Capsule} \small ($-35\text{ dBV/Pa}$)] (-10.5,-2.2) node[ground] {};
-
-        % =========================================================
-        % --- BOTTOM: INVERTING (-) INPUT & FEEDBACK LOOP ---
-        % =========================================================
-        \draw (opamp.-) -- (-2.2,-0.5) coordinate (inv_node);
-        
-        % Feedback loop dropped to y = -2.8 (1.0 unit below Pin 4 ground symbol!)
-        \draw (inv_node) -- (-2.2,-2.8) coordinate (fb_left);
-        \draw (opamp.out) -- (2.2,0) coordinate (out_split);
-        \draw (out_split) -- (2.2,-2.8) coordinate (fb_right);
-        
-        % 100 kOhm Feedback Resistor with label BELOW (l_=) into open space
-        \draw (fb_left) to[R, l_=$100\text{ k}\Omega$] (fb_right);
-        
-        % AC Gain branch to ground (4.7 kOhm + 47 uF) dropped cleanly from fb_left
-        \draw (fb_left) to[R, l_=$4.7\text{ k}\Omega$] (-2.2,-4.8)
-                        to[pC, l_=$47\ \mu\text{F}$] (-2.2,-6.4) node[ground] {};
-
-        % =========================================================
-        % --- RIGHT: OUTPUT STAGE (To 16-Bit USB ADC) ---
-        % =========================================================
-        \draw (out_split) -- (4.0,0) coordinate (cap_in);
-        \draw (cap_in) to[pC, l=$5.6\ \mu\text{F}$] (7.0,0) coordinate (adc_node);
-        \draw (adc_node) to[R, l=$100\text{ k}\Omega$] (7.0,-2.5) node[ground] {};
-        \draw (adc_node) to[short, -o] (9.5,0) 
-              node[right, align=left] {\textbf{Audio Out} \\ \small To 16-Bit USB ADC};
-
-        % =========================================================
-        % --- EXPLICIT ELECTRICAL NODE DOTS ---
-        % =========================================================
-        \node[circ] at (div_node) {};
-        \node[circ] at (rf_node) {};
-        \node[circ] at (mic_node) {};
-        \node[circ] at (inv_node) {};
-        \node[circ] at (fb_left) {};
-        \node[circ] at (out_split) {};
-        \node[circ] at (adc_node) {};
-
-    \end{circuitikz}
-    }
-    \caption{Schematic of the custom single-supply NE5532P audio preamplifier stage. The circuit features a classic non-inverting topology with $200\text{ pF}$ RF input filtering, single-supply mid-rail biasing, a $27\text{ dB}$ AC gain loop ($100\text{ k}\Omega / 4.7\text{ k}\Omega$), and DC-blocked line-level audio conditioning.}
-    \label{fig:ne5532_schematic}
-\end{figure}
-
-\subsection{Signal Digitization: Analog-to-Digital Conversion (ADC)}
-\label{sec:Ch2.1.3}
-
-Following the analog pre-amplification stage, the signal must be digitized for computational analysis. The fidelity of the resulting Fast Fourier Transform (FFT) algorithms is heavily dependent on the resolution and sampling rate of the chosen Analog-to-Digital Converter (ADC).
-
-Two primary digital conversion architectures were evaluated:
-
-\begin{itemize}
-    \item \textbf{Microcontroller ADC (e.g., Arduino Uno 10-bit):} 
-    
-    \item \textbf{Dedicated Audio ADC (16-bit USB Interface):} 
-\end{itemize}
+The raw serial data was subsequently logged locally using a custom Python script utilizing the PySerial library, preparing the time-series data for spectral analysis.
 

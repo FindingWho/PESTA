@@ -4,6 +4,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Block diagram of the proposed physical rig}}{7}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Final layout of the custom TDA2030A power amplifier, featuring perfect dynamic coordinate alignment and a spacious decoupling layout.}}{9}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Schematic of the custom single-supply NE5532P audio preamplifier stage. The circuit features a classic non-inverting topology with $200\text { pF}$ RF input filtering, single-supply mid-rail biasing, a $27\text { dB}$ AC gain loop ($100\text { k}\Omega / 4.7\text { k}\Omega $), and DC-blocked line-level audio conditioning.}}{13}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Block diagram of the proposed physical rig}}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces TDA2030 Module Schematic.}}{11}{figure.caption.15}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 20 Hz sinusoidal tone sweep. The waveform demonstrates clean periodicity with no DC offset, while the spectrogram confirms high-intensity energy capture at the 20 Hz frequency.}}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 50 Hz sinusoidal tone sweep. The waveform exhibits a stable amplitude envelope, while the spectrogram confirms a concentrated energy band at 50 Hz}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 200 Hz sinusoidal tone sweep. The waveform demonstrates a stable amplitude envelope with a sudden high-amplitude surge, while the spectrogram reveals harmonic distortion bands at integer multiples of the fundamental frequency.}}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Time-domain waveform and corresponding spectrogram of an 1111 Hz sinusoidal tone test. The waveform demonstrates stable high-frequency acquisition, while the spectrogram confirms a continuous, clean energy band at 1111 Hz without attenuation or digital blindness.}}{19}{figure.caption.22}%

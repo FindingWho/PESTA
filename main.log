@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  4 SEP 2026 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.5.31)  9 SEP 2026 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1058,7 +1058,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./main.aux (./front/title.aux) (./front/3_abstract.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
 (babel)             Reported on input line 3.
-) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
+) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -1176,7 +1176,7 @@ Package scrbase Info: activating english \symbolsUnits on input line 52.
 \openout2 = `front/title.aux'.
 
 (./front/title.tex
-<front/isep_wordmark_expanded_vintage.pdf, id=115, 6097.78125pt x 745.35966pt>
+<front/isep_wordmark_expanded_vintage.pdf, id=139, 6097.78125pt x 745.35966pt>
 File: front/isep_wordmark_expanded_vintage.pdf Graphic file (type pdf)
 <use front/isep_wordmark_expanded_vintage.pdf>
 Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input line 6.
@@ -1243,12 +1243,12 @@ Package pdftex.def Info: front/isep_wordmark_expanded_vintage.pdf  used on input
  Abstract
 --------------------
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 30.
+(Font)              <10.95> on input line 31.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \begin{secondlangabstract}
+l.31 \begin{secondlangabstract}
                                 [1
 
 
@@ -1259,7 +1259,7 @@ l.30 \begin{secondlangabstract}
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 \begin{secondlangabstract}
+l.31 \begin{secondlangabstract}
                                 [2
 
 ]
@@ -1286,39 +1286,27 @@ l.5 \tableofcontents
 
 
 
-] (./main.toc)
+] (./main.toc [5])
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- [5] [6
-
-] (./main.lof)
+ [6] (./main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [7{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [8
+ [7
+
+] [8
 
 ] (./main.lot)
 \tf@lot=\write11
 \openout11 = `main.lot'.
 
- [9] [10
+ (./main.gls) (./main.acr) (./main.syi [9] [10
 
-] (./main.lol)
-\tf@lol=\write12
-\openout12 = `main.lol'.
+])) [11
 
- [11] [12
-
-] (./main.loa)
-\tf@loa=\write13
-\openout13 = `main.loa'.
-
- (./main.gls) (./main.acr) (./main.syi [13] [14
-
-])) [15
-
-{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [16
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [12
 
 
 
@@ -1339,15 +1327,25 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
  (./chapters/chapter2.tex
 Chapter 2.
-) [3
+
+Overfull \hbox (1.51778pt too wide) in paragraph at lines 10--11
+\T1/lmr/m/n/10.95 sus-cep-ti-ble to chem-i-cal degra-da-tion, specif-i-cally hard-en-ing and micro-cracking, which
+ []
+
+
+Overfull \hbox (2.48177pt too wide) in paragraph at lines 14--15
+\T1/lmr/m/n/10.95 of med-i-cal pro-fes-sion-als. Clin-i-cians fre-quently carry their stetho-scopes draped around
+ []
+
+[3
 
 
 
 
-]
+]) [4] [5]
 \openout2 = `chapters/chapter3.aux'.
 
- (./chapters/chapter3.tex [4
+ (./chapters/chapter3.tex [6
 
 
 
@@ -1369,7 +1367,7 @@ Overfull \hbox (25.19994pt too wide) in paragraph at lines 27--42
  [][] 
  []
 
-[5]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
 []|\T1/lmr/m/n/10.95 Nyquist-Compliant Sam-
  []
@@ -1379,14 +1377,14 @@ Overfull \hbox (25.19994pt too wide) in paragraph at lines 53--66
  [][] 
  []
 
-[6]
+[8]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 145.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 145.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 145.
- [7] [8]
+ [9] [10]
 
 Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 283.
 
@@ -1407,92 +1405,95 @@ Overfull \hbox (3.70363pt too wide) in paragraph at lines 296--297
 []\T1/lmr/bx/n/10.95 MEMS (Micro-Electro-Mechanical Sys-tems) Mi-cro-phones: \T1/lmr/m/n/10.95 Com-monly
  []
 
-[9]
-Overfull \hbox (33.791pt too wide) in paragraph at lines 307--318
- [][] 
- []
-
-
-Overfull \hbox (3.52428pt too wide) in paragraph at lines 326--327
-[]\T1/lmr/m/n/10.95 Despite se-lect-ing a high-sensitivity Elec-tret Con-denser Mi-cro-phone (-35 dBV/Pa),
- []
-
-[10]
-Underfull \hbox (badness 7759) in paragraph at lines 346--347
-[]|\T1/lmr/m/n/10.95 JFETs of-fer higher in-put
- []
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 346--347
-\T1/lmr/m/n/10.95 impedance, but BJTs of-fer
- []
-
-
-Underfull \hbox (badness 3579) in paragraph at lines 348--349
-\T1/lmr/m/n/10.95 eter, cru-cial for cap-tur-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
-\T1/lmr/m/n/10.95 faint res-pi-ra-tory crack-les
- []
-
-
-Underfull \hbox (badness 4726) in paragraph at lines 352--353
-[]|\T1/lmr/m/n/10.95 Both are more than suf-
- []
-
-
-Underfull \hbox (badness 4378) in paragraph at lines 352--353
-\T1/lmr/m/n/10.95 fi-cient to ac-cu-rately track
- []
-
-
-Overfull \hbox (36.64265pt too wide) in paragraph at lines 342--356
- [][] 
- []
-
 [11]
-
-Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 442.
-
-
-Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 442.
+Overfull \hbox (28.37578pt too wide) in paragraph at lines 307--317
+ [][] 
+ []
 
 
-Package circuitikz Warning: polar capacitor has been deprecated; change to curved capacitor (see manual) on input line 442.
+Overfull \hbox (3.52428pt too wide) in paragraph at lines 325--326
+[]\T1/lmr/m/n/10.95 Despite se-lect-ing a high-sensitivity Elec-tret Con-denser Mi-cro-phone (-40 dBV/Pa),
+ []
 
-[12]) [13] (./main.bbl (./main.brf)
-\tf@brf=\write14
-\openout14 = `main.brf'.
+[12]
+Overfull \hbox (2.24182pt too wide) in paragraph at lines 331--332
+[]\T1/lmr/m/n/10.95 A 10 $\OML/lmm/m/it/10.95 ^^V$\T1/lmr/m/n/10.95 F elec-trolytic cou-pling ca-pac-i-tor was placed in se-ries be-tween the MAX9814
+ []
 
- [14
+[13]) [14]
+\openout2 = `chapters/chapter4.aux'.
+
+ (./chapters/chapter4.tex
+Chapter 4.
+<figures/20hz.jpg, id=402, 722.7pt x 578.16pt>
+File: figures/20hz.jpg Graphic file (type jpg)
+<use figures/20hz.jpg>
+Package pdftex.def Info: figures/20hz.jpg  used on input line 11.
+(pdftex.def)             Requested size: 398.33861pt x 318.66827pt.
+[15
 
 
 
-]) [15] (./main.aux (./front/title.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux))
+
+]
+<figures/50hz.jpg, id=409, 722.7pt x 578.16pt>
+File: figures/50hz.jpg Graphic file (type jpg)
+<use figures/50hz.jpg>
+Package pdftex.def Info: figures/50hz.jpg  used on input line 22.
+(pdftex.def)             Requested size: 398.33861pt x 318.66827pt.
+ [16 <./figures/20hz.jpg>]
+<figures/200hz.jpg, id=415, 722.7pt x 578.16pt>
+File: figures/200hz.jpg Graphic file (type jpg)
+<use figures/200hz.jpg>
+Package pdftex.def Info: figures/200hz.jpg  used on input line 34.
+(pdftex.def)             Requested size: 398.33861pt x 318.66827pt.
+ [17 <./figures/50hz.jpg>]
+<figures/1111hz.jpg, id=422, 722.7pt x 578.16pt>
+File: figures/1111hz.jpg Graphic file (type jpg)
+<use figures/1111hz.jpg>
+Package pdftex.def Info: figures/1111hz.jpg  used on input line 46.
+(pdftex.def)             Requested size: 398.33861pt x 318.66827pt.
+ [18 <./figures/200hz.jpg>]) [19 <./figures/1111hz.jpg>] [20] (./main.bbl (./main.brf)
+\tf@brf=\write12
+\openout12 = `main.brf'.
+
+
+Underfull \hbox (badness 8094) in paragraph at lines 13--13
+[]\T1/lmr/m/n/10.95 Ultrascope, ``Why does my stetho-scope tub-ing get hard?.'' []$\T1/lmtt/m/n/10.95 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--13
+\T1/lmtt/m/n/10.95 / / ultrascopes . com / blogs / news / why -[] does -[] my -[] stethoscope -[] tubing -[] get -[]
+ []
+
+) [21
+
+
+
+] (./main.aux (./front/title.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 72E688E4E9788AABF910E5322BA97717;3846.
+(rerunfilecheck)             Checksum: D28A3407D7DABE81A42546226CD2B643;5955.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: F88313BAD01D0F1E3D343C7D9D22B90A;280.
+(rerunfilecheck)             Checksum: 983DEAC3DBEB27720FF856F2543E4B62;508.
  ) 
 Here is how much of TeX's memory you used:
- 66435 strings out of 469495
- 1618080 string characters out of 5470098
- 2493936 words of memory out of 5000000
- 94126 multiletter control sequences out of 15000+600000
- 751191 words of font info for 123 fonts, out of 8000000 for 9000
+ 66141 strings out of 469495
+ 1607013 string characters out of 5470098
+ 2493734 words of memory out of 5000000
+ 93814 multiletter control sequences out of 15000+600000
+ 745218 words of font info for 121 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 101i,20n,105p,2576b,1291s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,20n,105p,2576b,1427s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (35 pages, 400970 bytes).
+Output written on main.pdf (37 pages, 2649543 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 87 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 482 compressed objects within 5 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,56 @@
+\chapter{Results and Discussion}
+
+\section{System Characterization via Controlled Frequency Sweeps}
+To evaluate the spectral response and operational limits of the integrated hardware prior to mechanical stethoscope coupling, a series of controlled sinusoidal tone sweeps were administered. The system's digital acquisition pipeline logged time-domain amplitude variations and converted the signals via Fast Fourier Transform (FFT) into dB-scaled spectrograms.
+
+\subsection{Low-Frequency Biomedical Bandwidth Analysis (20 - 50 Hz)}
+Biomarkers such as S1 and S2 heart sounds, alongside pathological S3 and S4 gallops, rely heavily on extreme low-frequency preservation. Testing the system at a fundamental frequency of 20 Hz verified the hardware's capacity to process foundational kinetic energy without artificial signal attenuation or low-frequency roll-off. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{20hz.jpg}
+    \caption{Time-domain waveform and corresponding spectrogram of a 20 Hz sinusoidal tone sweep. The waveform demonstrates clean periodicity with no DC offset, while the spectrogram confirms high-intensity energy capture at the 20 Hz frequency.}
+    \label{fig:20hz_analysis}
+\end{figure}
+
+As demonstrated in Figure \ref{fig:20hz_analysis}, the time-domain waveform while noisy, maintains a consistent amplitude envelope, and the spectrogram confirms that the system accurately captures the 20 Hz frequency with minimal harmonic distortion. However the sudden accuracy increase after 7 seconds is indicative of a noise floor reduction, likely due to the microphone's AGC (Automatic Gain Control) algorithm engaging after a period of low-amplitude input.
+
+Extending the low-frequency evaluation to 50 Hz provides further insight into the system's tracking capabilities across the primary cardiovascular band. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{50hz.jpg}
+    \caption{Time-domain waveform and corresponding spectrogram of a 50 Hz sinusoidal tone sweep. The waveform exhibits a stable amplitude envelope, while the spectrogram confirms a concentrated energy band at 50 Hz}
+    \label{fig:50hz_analysis}
+\end{figure}
+
+The Figure \ref{fig:50hz_analysis} displays a dense, high-intensity band concentrated at the 50 Hz baseline. The time-domain envelope remains stable for the majority of the capture window before exhibiting a high-amplitude surge during the final two seconds. This surge pushes the waveform toward the 1500 ADC value threshold, resulting in a broader vertical dispersion of energy across the upper frequency tiers of the spectrogram.
+
+\subsection{Intermediate-Frequency Analysis (200 Hz)}
+Transitioning into intermediate frequencies, testing the system at 200 Hz evaluates the operational response and linearity of the amplification stage as the signal approaches the mid-range of the cardiopulmonary spectrum.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{200hz.jpg}
+    \caption{Time-domain waveform and corresponding spectrogram of a 200 Hz sinusoidal tone sweep. The waveform demonstrates a stable amplitude envelope with a sudden high-amplitude surge, while the spectrogram reveals harmonic distortion bands at integer multiples of the fundamental frequency.}
+    \label{fig:200hz_analysis}
+\end{figure}
+
+As illustrated in Figure \ref{fig:200hz_analysis}, the time-domain envelope remains relatively constrained during the first five seconds before experiencing a sharp, high-amplitude jump, expanding the waveform range toward $\pm 1500$ ADC units. Concurrently, the spectrogram exhibits a dense fundamental frequency band at 200 Hz accompanied by sharp, parallel horizontal intensity tracks stacking at exact integer multiples ($400\text{ Hz}$, $600\text{ Hz}$, $800\text{ Hz}$, $1000\text{ Hz}$, and above). Rather than random system noise, these structured harmonic bands are indicative of Total Harmonic Distortion (THD).
+
+\subsection{High-Frequency Analysis (1111 Hz)}
+To verify that the digitization pipeline avoids the data bottlenecks typical of lower communication speeds and satisfies the Nyquist sampling theorem for the upper bounds of the cardiopulmonary bandwidth, high-frequency validation was performed using an 1111 Hz input tone.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{1111hz.jpg}
+    \caption{Time-domain waveform and corresponding spectrogram of an 1111 Hz sinusoidal tone test. The waveform demonstrates stable high-frequency acquisition, while the spectrogram confirms a continuous, clean energy band at 1111 Hz without attenuation or digital blindness.}
+    \label{fig:1111hz_analysis}
+\end{figure}
+
+The spectrogram in Figure \ref{fig:1111hz_analysis} displays a sharp, continuous horizontal intensity band locked precisely at the 1111 Hz mark across the entire ten-second capture window. This visualization confirms that increasing the ESP32 serial communication baud rate to 500,000 bps successfully maintains a hardware sampling rate well above the 4000 Hz threshold required to map the 2000 Hz medical ceiling.
+
+\section{Conclusion and Future Work}
+
+This project designed, implemented, and validated an acoustic calibration and visualization system for stethoscopes. By integrating an  ESP32 data acquisition pipeline, a MAX9814 pre-amplifier stage, a TDA2030 amplification module. The prototype captured and mapped the entire 20 Hz to 2000 Hz cardiopulmonary frequency spectrum. Discrete frequency testing confirmed the system's ability to isolate low-frequency physiological events while maintaining high spectral fidelity. Ultimately, the developed architecture offers a scalable framework to evaluate stethoscope degradation and ensure clinical reliability.
+Currently the system is limited to single-channel acquisition, and future work will focus on implementing multi-channel support to enable simultaneous bilateral auscultation. Additionally, further research will explore the integration of machine learning algorithms for automated anomaly detection and classification of heart and lung sounds, enhancing the diagnostic capabilities of the system.

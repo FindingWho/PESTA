@@ -3,24 +3,30 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{List of Figures}{vii}{chapter*.7}%
 \contentsline {chapter}{List of Tables}{ix}{chapter*.8}%
-\contentsline {chapter}{Listings}{xi}{chapter*.9}%
-\contentsline {chapter}{List of Algorithms}{xiii}{chapter*.10}%
-\contentsline {chapter}{List of Symbols}{xv}{section*.11}%
+\contentsline {chapter}{List of Symbols}{xi}{section*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}State of the Art/Contextualization}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Project Description}{2}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Objectives}{2}{subsection.1.2.1}%
 \contentsline {chapter}{\numberline {2}Literature Review}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Previous Work}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Methodology}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}System Requirements}{5}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Functional Requirements}{5}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Non-Functional Requirements}{6}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}System Architecture}{7}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Component Selection}{7}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Sound Generation Technologies}{7}{subsection.3.3.1}%
-\contentsline {subsubsection}{Power Amplifier}{8}{section*.16}%
-\contentsline {subsection}{\numberline {3.3.2}Sound Acquisition Technologies}{9}{subsection.3.3.2}%
-\contentsline {subsubsection}{Pre-Amplifier}{11}{section*.19}%
-\contentsline {subsection}{\numberline {3.3.3}Signal Digitization: Analog-to-Digital Conversion (ADC)}{13}{subsection.3.3.3}%
-\contentsline {chapter}{References}{14}{section*.22}%
+\contentsline {section}{\numberline {2.1}Mechanics of Material Breakdown in Clinical Environments}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Acoustic Principles and Diagnostic Risks of Stethoscope Degradation}{4}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Methodology}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Requirements}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Functional Requirements}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Non-Functional Requirements}{8}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}System Architecture}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Component Selection}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Sound Generation Technologies}{9}{subsection.3.3.1}%
+\contentsline {subsubsection}{Power Amplifier}{10}{section*.14}%
+\contentsline {subsection}{\numberline {3.3.2}Sound Acquisition Technologies}{11}{subsection.3.3.2}%
+\contentsline {subsubsection}{Pre-Amplifier}{13}{section*.17}%
+\contentsline {subsubsection}{Hardware Anti-Aliasing Filter}{13}{section*.18}%
+\contentsline {subsection}{\numberline {3.3.3}Signal Digitization and Transmission}{14}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System Characterization via Controlled Frequency Sweeps}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Low-Frequency Biomedical Bandwidth Analysis (20 - 50 Hz)}{15}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Intermediate-Frequency Analysis (200 Hz)}{17}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}High-Frequency Analysis (1111 Hz)}{18}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Conclusion and Future Work}{19}{section.4.2}%
+\contentsline {chapter}{References}{21}{section*.23}%
