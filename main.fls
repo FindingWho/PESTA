@@ -1,7 +1,7 @@
-PWD /home/rodrigo/Documents/PESTA/PESTA
+PWD /home/someone/Documents/PESTA
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/rodrigo/Documents/PESTA/PESTA/main.tex
+INPUT /home/someone/Documents/PESTA/main.tex
 OUTPUT main.log
 INPUT ./DEEclass.cls
 INPUT DEEclass.cls
@@ -738,7 +738,6 @@ INPUT ./main.brf
 INPUT ./main.brf
 OUTPUT main.brf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr9.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT main.aux
 INPUT ./front/title.aux
 INPUT ./front/title.aux
@@ -782,5 +781,4 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmri8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb
