@@ -1,0 +1,55 @@
+\chapter{Python Spectral Analysis}
+
+This appendix details the Python digital signal processing (DSP) pipeline executed on the host machine. It governs the real-time serial buffering and the mathematical transformation of the physical acoustic data.
+
+\section{Real-Time Buffering and STFT Spectrogram}
+
+The following script utilizes the \texttt{pyserial}, \texttt{numpy}, and \texttt{scipy} libraries to interface with the ESP32. It buffers the incoming 12-bit audio data, applies a mathematical Hanning window, and computes the Short-Time Fourier Transform (STFT) to generate a dynamic spectrogram of the cardiopulmonary acoustic sweep.
+
+\begin{lstlisting}[language=Python, caption={Python DSP script for real-time serial data buffering and STFT spectrogram generation.}, label={lst:python_dsp}]
+import serial
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import spectrogram
+
+# Configure Serial Port (Update 'COM3' or '/dev/ttyUSB0' as needed)
+SERIAL_PORT = 'COM3'
+BAUD_RATE = 500000
+FS = 20000  # 20 kHz sampling rate
+
+def acquire_data(duration_seconds=5):
+    """Buffers incoming UART data from the ESP32."""
+    samples_to_read = FS * duration_seconds
+    audio_data = np.zeros(samples_to_read)
+    
+    with serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1) as ser:
+        print(f"Recording {duration_seconds} seconds of acoustic data...")
+        for i in range(samples_to_read):
+            try:
+                line = ser.readline().decode('utf-8').strip()
+                audio_data[i] = int(line)
+            except ValueError:
+                audio_data[i] = audio_data[i-1] # Hold previous value on error
+                
+    # Center waveform around 0
+    audio_data = audio_data - np.mean(audio_data)
+    return audio_data
+
+def plot_spectrogram(data):
+    """Computes and visualizes the STFT Spectrogram."""
+    f, t, Sxx = spectrogram(data, fs=FS, window='hann', nperseg=1024, noverlap=512)
+    
+    plt.figure(figsize=(10, 6))
+    # Plot spectrogram in dB
+    plt.pcolormesh(t, f, 10 * np.log10(Sxx + 1e-10), shading='gouraud', cmap='jet')
+    plt.ylim(0, 2000) # Limit view to cardiopulmonary bandwidth
+    plt.ylabel('Frequency [Hz]')
+    plt.xlabel('Time [sec]')
+    plt.title('Cardiopulmonary Acoustic Spectrogram (20 Hz - 2000 Hz)')
+    plt.colorbar(label='Intensity [dB]')
+    plt.show()
+
+if __name__ == '__main__':
+    raw_audio = acquire_data(duration_seconds=10)
+    plot_spectrogram(raw_audio)
+\end{lstlisting}

@@ -5,29 +5,63 @@
 \contentsline {chapter}{List of Tables}{ix}{chapter*.8}%
 \contentsline {chapter}{List of Symbols}{xi}{section*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}State of the Art/Contextualization}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Project Description}{2}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Objectives}{3}{subsection.1.2.1}%
-\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Methodology}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}System Requirements}{7}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Functional Requirements}{7}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Non-Functional Requirements}{8}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}System Architecture}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Component Selection}{9}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Sound Generation Technologies}{9}{subsection.3.3.1}%
-\contentsline {subsubsection}{Power Amplifier}{10}{section*.14}%
-\contentsline {subsection}{\numberline {3.3.2}Sound Acquisition Technologies}{11}{subsection.3.3.2}%
-\contentsline {subsubsection}{Pre-Amplifier}{13}{section*.17}%
-\contentsline {subsubsection}{Hardware Anti-Aliasing Filter}{13}{section*.18}%
-\contentsline {subsection}{\numberline {3.3.3}Signal Digitization and Transmission}{14}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Results and Discussion}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}System Characterization via Controlled Frequency Sweeps}{15}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Low-Frequency Biomedical Bandwidth Analysis (20 - 50 Hz)}{15}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Intermediate-Frequency Analysis (200 Hz)}{17}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}High-Frequency Analysis (1111 Hz)}{18}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Clinical and Economic Implications of Acoustic Degradation}{19}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Clinical Awareness of Acoustic Degradation}{20}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Testing vs. Calibration and the Question of Reversibility}{20}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}The Economic Dilemma: Acoustic vs. Electronic Stethoscopes}{20}{subsection.4.2.3}%
-\contentsline {chapter}{References}{22}{section*.23}%
+\contentsline {section}{\numberline {1.1}Problem Identification/Contextualization}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}PICO Framework}{5}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Research Questions}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Objectives and Motivation}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Project Schedule}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Report Organization}{8}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Literature Review}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}The Modern Stethoscope: Architecture and Error Sources}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Mechanical Architecture and Component Functions}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Chemical and Mechanical Degradation in Clinical Environments}{16}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Sources of Acoustic Error and Transmission Loss}{17}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Medical Metrology and Biomedical Acoustics}{18}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Metrology and Quality Assurance in Medical Devices}{18}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Principles of Acoustic Impedance and Boundary Reflection}{19}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Acoustic Signatures of Cardiopulmonary and Biological Sounds}{20}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Cardiovascular Acoustic Signatures}{20}{subsection.2.3.1}%
+\contentsline {paragraph}{First and Second Heart Sounds (S1 and S2)}{20}{section*.19}%
+\contentsline {paragraph}{Third and Fourth Heart Sounds (S3 and S4 Gallops)}{21}{section*.20}%
+\contentsline {paragraph}{Cardiac Murmurs}{21}{section*.21}%
+\contentsline {subsection}{\numberline {2.3.2}Pulmonary Acoustic Signatures}{22}{subsection.2.3.2}%
+\contentsline {paragraph}{Normal Breath Sounds (Vesicular and Tracheal)}{22}{section*.22}%
+\contentsline {paragraph}{Adventitious Lung Sounds (Wheezes, Rhonchi, and Crackles)}{22}{section*.23}%
+\contentsline {subsection}{\numberline {2.3.3}Other Clinical Auscultation Sounds}{23}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Electroacoustic Transducer Frequency Response Curves}{23}{subsection.2.3.4}%
+\contentsline {paragraph}{Sound Generation Curves: Dynamic Speakers vs. Surface Exciters}{25}{section*.25}%
+\contentsline {paragraph}{Sound Acquisition Curves: Electret Condenser (ECM) vs. MEMS Microphones}{26}{section*.27}%
+\contentsline {section}{\numberline {2.4}Existing Stethoscope Validation Systems and Approaches}{28}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Industrial and Laboratory Reference Standards}{28}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Academic Validation Prototypes and Methodologies}{28}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Identification of the Technological Gap}{29}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Methodology}{31}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Requirements}{31}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Functional Requirements}{31}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Non-Functional Requirements}{32}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}System Architecture}{33}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Component Selection}{34}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Sound Generation Technologies}{34}{subsection.3.3.1}%
+\contentsline {subsubsection}{Power Amplifier}{35}{section*.33}%
+\contentsline {subsection}{\numberline {3.3.2}Sound Acquisition Technologies}{37}{subsection.3.3.2}%
+\contentsline {subsubsection}{Pre-Amplifier}{39}{section*.37}%
+\contentsline {subsubsection}{Hardware Anti-Aliasing Filter}{40}{section*.39}%
+\contentsline {subsection}{\numberline {3.3.3}Signal Digitization and Transmission}{40}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}System Data Pipeline}{41}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Results and Discussion}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System Characterization via Controlled Frequency Sweeps}{43}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Low-Frequency Biomedical Bandwidth Analysis (20 - 50 Hz)}{43}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Intermediate-Frequency Analysis (200 Hz)}{45}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}High-Frequency Analysis (1111 Hz)}{46}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Clinical and Economic Implications of Acoustic Degradation}{48}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Clinical Awareness of Acoustic Degradation}{48}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Testing vs. Calibration and the Question of Reversibility}{48}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}The Economic Dilemma: Acoustic vs. Electronic Stethoscopes}{49}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Limitations}{52}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Work}{53}{section.5.2}%
+\contentsline {chapter}{References}{54}{section*.46}%
+\contentsline {chapter}{Appendix \numberline {A}ESP32 Data Acquisition}{59}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Timer Interrupt and Serial Transmission}{59}{section.A.1}%
+\contentsline {chapter}{Appendix \numberline {B}Python Spectral Analysis}{61}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Real-Time Buffering and STFT Spectrogram}{61}{section.B.1}%

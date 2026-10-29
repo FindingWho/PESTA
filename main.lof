@@ -2,12 +2,25 @@
 \babel@toc {portuguese}{}\relax 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Original wooden monaural stethoscope designed by Laennec, showing its detachable plug and hollow acoustic lumen. Source: Adapted from Roguin \cite {roguin2006rene}.}}{2}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Painting by Théobald Chartran depicting René Laennec performing auscultation at the Necker Hospital in 1816. Source: Adapted from Roguin \cite {roguin2006rene}.}}{3}{figure.caption.12}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Main mechanical components of a dual-head acoustic stethoscope, detailing the side profile of the bell and diaphragm chestpiece (left) and the front view of the diaphragm retaining assembly (right). Source: Adapted from IndoSurgicals \cite {indosurgicals2024}.}}{14}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Measured frequency response of the Dayton Audio DAEX25FHE-4 structural exciter in dB SPL, featuring the primary mechanical resonance peak within the lower spectrum boundary. Source: Adapted from Dayton Audio \cite {dayton2013daex25fhe}.}}{26}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparison of typical normalized frequency response curves for an omnidirectional ECM capsule, a standard consumer MEMS microphone, and a compact free-air loudspeaker across the cardiopulmonary auscultation bandwidth. Source: Adapted from Eargle \cite {eargle2004microphone}, Ballou \cite {ballou2015handbook}, and Lewis \cite {lewis2013mems}.}}{27}{figure.caption.28}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Block diagram of the proposed physical rig}}{34}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The Dayton Audio DAEX25FHE-4 surface exciter (left) and its primary electromechanical specifications (right).}}{35}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces TDA2030 Module Schematic.}}{36}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces The pre-assembled TDA2030A Class-AB audio amplifier module utilized in the physical rig (left) and its primary technical specifications (right).}}{37}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces The integrated MAX9814 microphone amplifier and ECM module (left) alongside its primary technical specifications (right).}}{39}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The ESP32-WROOM-32D microcontroller development board (left) and its primary hardware specifications (right).}}{41}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces System methodology and data pipeline, illustrating the continuous signal flow from analog acoustic capture to digital time-frequency visualization.}}{42}{figure.caption.41}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 20 Hz sinusoidal tone sweep. The waveform demonstrates clean periodicity with no DC offset, while the spectrogram confirms high-intensity energy capture at the 20 Hz frequency.}}{44}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 50 Hz sinusoidal tone sweep. The waveform exhibits a stable amplitude envelope, while the spectrogram confirms a concentrated energy band at 50 Hz}}{45}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 200 Hz sinusoidal tone sweep. The waveform demonstrates a stable amplitude envelope with a sudden high-amplitude surge, while the spectrogram reveals harmonic distortion bands at integer multiples of the fundamental frequency.}}{46}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Time-domain waveform and corresponding spectrogram of an 1111 Hz sinusoidal tone test. The waveform demonstrates stable high-frequency acquisition, while the spectrogram confirms a continuous, clean energy band at 1111 Hz without attenuation or digital blindness.}}{47}{figure.caption.45}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Block diagram of the proposed physical rig}}{9}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces TDA2030 Module Schematic.}}{11}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 20 Hz sinusoidal tone sweep. The waveform demonstrates clean periodicity with no DC offset, while the spectrogram confirms high-intensity energy capture at the 20 Hz frequency.}}{16}{figure.caption.19}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 50 Hz sinusoidal tone sweep. The waveform exhibits a stable amplitude envelope, while the spectrogram confirms a concentrated energy band at 50 Hz}}{17}{figure.caption.20}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Time-domain waveform and corresponding spectrogram of a 200 Hz sinusoidal tone sweep. The waveform demonstrates a stable amplitude envelope with a sudden high-amplitude surge, while the spectrogram reveals harmonic distortion bands at integer multiples of the fundamental frequency.}}{18}{figure.caption.21}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Time-domain waveform and corresponding spectrogram of an 1111 Hz sinusoidal tone test. The waveform demonstrates stable high-frequency acquisition, while the spectrogram confirms a continuous, clean energy band at 1111 Hz without attenuation or digital blindness.}}{19}{figure.caption.22}%

@@ -21,6 +21,7 @@
 LEEC,			% Use this option to select your DEE degree, options: LEEC, LETI
 english,		% Select document language, options: portuguese, english
 %draft,			% Uncomment for draft mode (no pictures, no links, overfull hboxes) 
+12pt,			% Select font size, options: 10pt, 11pt, 12pt
 ]{DEEclass}
 %\nocite{*}
 % Use the 'preamble.tex' file (root folder) do add packages and macros. Keep your main.tex file clean.
@@ -50,6 +51,12 @@ english,		% Select document language, options: portuguese, english
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+\begingroup
+  % 1. Remove o espaço vertical extra entre as linhas do index
+  \setlength{\parskip}{0pt}
+  % 2. Restaura o espaçamento padrão entre itens (opcional, ajuste se necessário)
+  \setlength{\parsep}{0pt}
+
 \frontmatter
 \include{front/title}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FRONTMATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,6 +70,7 @@ english,		% Select document language, options: portuguese, english
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAINMATTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \mainmatter
+\endgroup
 \pagestyle{thesis} 				
 
 % Include the chapters of the document as separate files from the 'chapters' folder
@@ -71,6 +79,8 @@ english,		% Select document language, options: portuguese, english
 \include{chapters/chapter2}		
 \include{chapters/chapter3}	
 \include{chapters/chapter4}
+\include{chapters/chapter5}
+% Uncomment the lines as you write the chapters, or comment the lines if not used
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Print the bibliographic references using the ieeetr format from the 'sampleRefs.bib' file (root folder)
@@ -81,8 +91,9 @@ english,		% Select document language, options: portuguese, english
 \begin{appendices}
 % Include the appendices of the document as separate files from the 'chapters' folder
 
-%\include{chapters/appendixA}	% Uncomment the lines as you write the appendices,
-%\include{chapters/appendixB}	% or comment the lines if not used
+\include{chapters/appendixA}
+	% Uncomment the lines as you write the appendices,
+\include{chapters/appendixB}	% or comment the lines if not used
 
 \end{appendices}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

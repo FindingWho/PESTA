@@ -1,17 +1,19 @@
 \begin{thebibliography}{10}
 
-\bibitem{market_report_2022}
-{Transparency Market Research}, ``Stethoscope market - global industry analysis, size, share, growth, trends, and forecast, 2022-2031.'' Industry Report, 2022.
-\newblock [Online]. Available: https://www.transparencymarketresearch.com/.
-
-\bibitem{gardezi2017cardiac}
-S.~K.~M. Gardezi, S.~G. Myerson, B.~Prendergast, A.~Prothero, A.~Prendergast, M.~Loudon, and J.~D'Arcy, ``Cardiac auscultation in diagnosing valvular heart disease: a comparison between general practitioners and cardiologists,'' {\em European Heart Journal}, vol.~38, no.~suppl\_1, 2017.
-
 \bibitem{roguin2006rene}
 A.~Roguin, ``Rene theophile hyacinthe la{\"e}nnec (1781--1826): the man behind the stethoscope,'' {\em Clinical medicine \& research}, vol.~4, no.~3, pp.~230--235, 2006.
 
 \bibitem{weinberg1993color}
 F.~Weinberg, ``The stethoscope,'' {\em Canadian Family Physician}, vol.~39, p.~2223, 1993.
+
+\bibitem{leng2015electronic}
+S.~Leng, R.~S. Tan, K.~T.~C. Chai, C.~Wang, D.~Ghista, and L.~Zhong, ``The electronic stethoscope,'' {\em BioMedical Engineering OnLine}, vol.~14, no.~1, p.~66, 2015.
+
+\bibitem{fan2022real}
+B.~Fan {\em et~al.}, ``Real-world evaluation of the stemoscope electronic tele-auscultation system compared to traditional acoustic stethoscopes,'' {\em BioMedical Engineering OnLine}, vol.~21, no.~63, 2022.
+
+\bibitem{gardezi2017cardiac}
+S.~K.~M. Gardezi, S.~G. Myerson, B.~Prendergast, A.~Prothero, A.~Prendergast, M.~Loudon, and J.~D'Arcy, ``Cardiac auscultation in diagnosing valvular heart disease: a comparison between general practitioners and cardiologists,'' {\em European Heart Journal}, vol.~38, no.~suppl\_1, 2017.
 
 \bibitem{josh2012temperature}
 M.~S. Josh, S.~Pradeep, S.~Balachandran, R.~S. Devi, {\em et~al.}, ``Temperature-and solvent-dependent migrations of di (2-ethylhexyl) phthalate, the hazardous plasticizer from commercial pvc blood storage bag,'' {\em Journal of Polymer Research}, vol.~19, no.~7, p.~9915, 2012.
@@ -22,17 +24,43 @@ Z.~Zhang {\em et~al.}, ``A review of artificial sebum formulations, their compos
 \bibitem{ertel1966stethoscope}
 P.~Y. Ertel, M.~Lawrence, R.~K. Brown, and A.~M. Stern, ``Stethoscope acoustics: Transmission and filtration patterns,'' {\em Circulation}, vol.~34, no.~5, pp.~899--909, 1966.
 
-\bibitem{leng2015electronic}
-S.~Leng, R.~S. Tan, K.~T.~C. Chai, C.~Wang, D.~Ghista, and L.~Zhong, ``The electronic stethoscope,'' {\em BioMedical Engineering OnLine}, vol.~14, no.~1, p.~66, 2015.
+\bibitem{indosurgicals2024}
+{IndoSurgicals Pvt. Ltd.}, {\em Acoustic Stethoscope Technical Specifications and Component Guide}, 2024.
+\newblock [Online]. Available: \url{https://www.indosurgicals.com/}.
+
+\bibitem{badnjevic2015medical}
+A.~Badnjevi{\'c}, L.~Gurbeta, D.~Bo{\v{s}}kovi{\'c}, and Z.~Dzemic, ``Medical devices in legal metrology,'' in {\em 2015 4th Mediterranean Conference on Embedded Computing (MECO)}, pp.~365--368, IEEE, 2015.
+
+\bibitem{webster2010medical}
+J.~G. Webster, {\em Medical Instrumentation: Application and Design}.
+\newblock Hoboken, NJ, USA: John Wiley \& Sons, 4th~ed., 2010.
 
 \bibitem{klum2019validation}
 M.~Klum {\em et~al.}, ``Validation system for digital stethoscopes,'' {\em Current Directions in Biomedical Engineering}, vol.~5, no.~1, pp.~261--264, 2019.
 
-\bibitem{fan2022real}
-B.~Fan {\em et~al.}, ``Real-world evaluation of the stemoscope electronic tele-auscultation system compared to traditional acoustic stethoscopes,'' {\em BioMedical Engineering OnLine}, vol.~21, no.~63, 2022.
+\bibitem{pasterkamp1997respiratory}
+H.~Pasterkamp, S.~S. Kraman, and G.~R. Wodicka, ``Respiratory sounds: advances beyond the stethoscope,'' {\em American Journal of Respiratory and Critical Care Medicine}, vol.~156, no.~3, pp.~974--987, 1997.
 
-\bibitem{debbal2011computerized}
-S.~M. Debbal and F.~Bereksi-Reguig, ``Computerized heart sounds analysis,'' in {\em Applied Digital Signal Processing}, IntechOpen, 2011.
+\bibitem{kinsler2000fundamentals}
+L.~E. Kinsler, A.~R. Frey, A.~B. Coppens, and J.~V. Sanders, {\em Fundamentals of Acoustics}.
+\newblock New York, NY, USA: John Wiley \& Sons, 4th~ed., 2000.
+
+\bibitem{eargle2004microphone}
+J.~Eargle, {\em The Microphone Book: From Mono to Stereo to Surround, a Guide to Microphone Design and Application}.
+\newblock Oxford, UK: Focal Press / Elsevier, 2nd~ed., 2004.
+
+\bibitem{ballou2015handbook}
+G.~Ballou, {\em Handbook for Sound Engineers}.
+\newblock New York, NY, USA: Focal Press / Routledge, 5th~ed., 2015.
+
+\bibitem{dayton2013daex25fhe}
+{Dayton Audio}, {\em {DAEX25FHE-4} Framed High Efficiency 25mm Exciter Specification Sheet}.
+\newblock Dayton Audio, Springboro, OH, USA, 2013.
+\newblock [Online; acedido em 29-Outubro-2026].
+
+\bibitem{lewis2013mems}
+J.~Lewis and B.~Moss, ``Mems microphones, the future for hearing aids,'' {\em Analog Dialogue}, vol.~47, pp.~1--5, November 2013.
+\newblock [Online; acessado em 29-Outubro-2026].
 
 \bibitem{zhang2022class}
 Y.~Zhang {\em et~al.}, ``The class d audio power amplifier: A review,'' {\em Electronics}, vol.~11, no.~19, p.~3244, 2022.

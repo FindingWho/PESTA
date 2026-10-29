@@ -1,16 +1,128 @@
-\backcite {market_report_2022}{{1}{1.1}{section.1.1}}
-\backcite {gardezi2017cardiac}{{1}{1.1}{section.1.1}}
+\backcite {roguin2006rene}{{vii}{(document)}{Doc-Start}}
+\backcite {roguin2006rene}{{vii}{(document)}{Doc-Start}}
+\backcite {indosurgicals2024}{{vii}{(document)}{Doc-Start}}
+\backcite {dayton2013daex25fhe}{{vii}{(document)}{Doc-Start}}
+\backcite {eargle2004microphone}{{vii}{(document)}{Doc-Start}}
+\backcite {ballou2015handbook}{{vii}{(document)}{Doc-Start}}
+\backcite {lewis2013mems}{{vii}{(document)}{Doc-Start}}
 \backcite {roguin2006rene}{{2}{1.1}{section.1.1}}
 \backcite {roguin2006rene}{{2}{1.1}{section.1.1}}
-\backcite {weinberg1993color}{{2}{1.1}{section.1.1}}
-\backcite {weinberg1993color}{{2}{1.1}{section.1.1}}
-\backcite {josh2012temperature}{{5}{2}{chapter.2}}
-\backcite {zhang2024review}{{5}{2}{chapter.2}}
-\backcite {ertel1966stethoscope}{{5}{2}{chapter.2}}
-\backcite {leng2015electronic}{{5}{2}{chapter.2}}
-\backcite {klum2019validation}{{6}{2}{chapter.2}}
-\backcite {fan2022real}{{6}{2}{chapter.2}}
-\backcite {debbal2011computerized}{{6}{2}{chapter.2}}
-\backcite {klum2019validation}{{10}{3.3.1}{subsection.3.3.1}}
-\backcite {zhang2022class}{{11}{3.3.1}{section*.14}}
-\backcite {duraij2021comparative}{{11}{3.3.1}{section*.14}}
+\backcite {roguin2006rene}{{2}{1.1}{figure.caption.11}}
+\backcite {roguin2006rene}{{3}{1.2}{figure.caption.12}}
+\backcite {weinberg1993color}{{3}{1.1}{figure.caption.12}}
+\backcite {leng2015electronic, fan2022real}{{3}{1.1}{figure.caption.12}}
+\backcite {gardezi2017cardiac}{{3}{1.1}{figure.caption.12}}
+\backcite {leng2015electronic}{{4}{1.1}{figure.caption.12}}
+\backcite {josh2012temperature, zhang2024review}{{4}{1.1}{figure.caption.12}}
+\backcite {ertel1966stethoscope}{{4}{1.1}{figure.caption.12}}
+\backcite {leng2015electronic}{{4}{1.1}{figure.caption.12}}
+\backcite {leng2015electronic, fan2022real}{{11}{2.1}{section.2.1}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{11}{2.1.1}{subsection.2.1.1}}
+\backcite {weinberg1993color}{{12}{2.1.1}{subsection.2.1.1}}
+\backcite {weinberg1993color, indosurgicals2024}{{12}{1}{Item.1}}
+\backcite {ertel1966stethoscope}{{12}{2}{Item.2}}
+\backcite {indosurgicals2024}{{12}{2}{Item.2}}
+\backcite {ertel1966stethoscope}{{12}{2}{Item.2}}
+\backcite {weinberg1993color, leng2015electronic, indosurgicals2024}{{12}{3}{Item.3}}
+\backcite {indosurgicals2024}{{12}{4}{Item.4}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{12}{4}{Item.4}}
+\backcite {indosurgicals2024}{{12}{5}{Item.5}}
+\backcite {josh2012temperature, indosurgicals2024}{{12}{6}{Item.6}}
+\backcite {ertel1966stethoscope}{{13}{6}{Item.6}}
+\backcite {indosurgicals2024}{{13}{7}{Item.7}}
+\backcite {indosurgicals2024}{{13}{8}{Item.8}}
+\backcite {indosurgicals2024}{{13}{9}{Item.9}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{13}{9}{Item.9}}
+\backcite {indosurgicals2024}{{14}{2.1}{figure.caption.17}}
+\backcite {josh2012temperature}{{16}{2.1.2}{subsection.2.1.2}}
+\backcite {josh2012temperature}{{16}{2.1.2}{subsection.2.1.2}}
+\backcite {zhang2024review}{{16}{2.1.2}{subsection.2.1.2}}
+\backcite {zhang2024review}{{17}{2.1.2}{subsection.2.1.2}}
+\backcite {ertel1966stethoscope}{{17}{2.1.3}{subsection.2.1.3}}
+\backcite {leng2015electronic}{{17}{2.1.3}{subsection.2.1.3}}
+\backcite {ertel1966stethoscope}{{17}{1}{Item.10}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{17}{1}{Item.10}}
+\backcite {josh2012temperature}{{18}{2}{Item.11}}
+\backcite {leng2015electronic}{{18}{2}{Item.11}}
+\backcite {leng2015electronic}{{18}{3}{Item.12}}
+\backcite {badnjevic2015medical, webster2010medical}{{18}{2.2}{section.2.2}}
+\backcite {badnjevic2015medical}{{19}{2.2.1}{subsection.2.2.1}}
+\backcite {badnjevic2015medical, webster2010medical}{{19}{2.2.1}{subsection.2.2.1}}
+\backcite {ertel1966stethoscope, gardezi2017cardiac}{{19}{2.2.1}{subsection.2.2.1}}
+\backcite {klum2019validation}{{19}{2.2.1}{subsection.2.2.1}}
+\backcite {webster2010medical, pasterkamp1997respiratory}{{19}{2.2.2}{subsection.2.2.2}}
+\backcite {kinsler2000fundamentals, webster2010medical}{{19}{2.2.2}{subsection.2.2.2}}
+\backcite {kinsler2000fundamentals}{{19}{2.2.2}{subsection.2.2.2}}
+\backcite {webster2010medical}{{19}{2.2.2}{subsection.2.2.2}}
+\backcite {webster2010medical, pasterkamp1997respiratory}{{20}{2.2.2}{subsection.2.2.2}}
+\backcite {kinsler2000fundamentals, webster2010medical}{{20}{2.2.2}{subsection.2.2.2}}
+\backcite {webster2010medical, pasterkamp1997respiratory}{{20}{2.2.2}{subsection.2.2.2}}
+\backcite {leng2015electronic, webster2010medical}{{20}{2.3}{section.2.3}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{20}{2.3}{section.2.3}}
+\backcite {leng2015electronic, webster2010medical}{{20}{2.3.1}{subsection.2.3.1}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{20}{2.3.1}{subsection.2.3.1}}
+\backcite {leng2015electronic}{{20}{2.3.1}{section*.19}}
+\backcite {webster2010medical}{{21}{2.3.1}{section*.19}}
+\backcite {leng2015electronic}{{21}{2.3.1}{section*.19}}
+\backcite {webster2010medical}{{21}{2.3.1}{section*.19}}
+\backcite {leng2015electronic}{{21}{2.3.1}{section*.19}}
+\backcite {leng2015electronic}{{21}{2.3.1}{section*.20}}
+\backcite {leng2015electronic, webster2010medical}{{21}{2.3.1}{section*.20}}
+\backcite {leng2015electronic}{{21}{2.3.1}{section*.20}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{21}{2.3.1}{section*.20}}
+\backcite {ertel1966stethoscope}{{21}{2.3.1}{section*.20}}
+\backcite {leng2015electronic, webster2010medical}{{21}{2.3.1}{section*.21}}
+\backcite {leng2015electronic}{{21}{2.3.1}{section*.21}}
+\backcite {pasterkamp1997respiratory}{{22}{2.3.2}{subsection.2.3.2}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{22}{2.3.2}{subsection.2.3.2}}
+\backcite {pasterkamp1997respiratory}{{22}{2.3.2}{section*.22}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{22}{2.3.2}{section*.22}}
+\backcite {pasterkamp1997respiratory}{{22}{2.3.2}{section*.22}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{22}{2.3.2}{section*.23}}
+\backcite {pasterkamp1997respiratory}{{22}{2.3.2}{section*.23}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{22}{2.3.2}{section*.23}}
+\backcite {pasterkamp1997respiratory}{{22}{2.3.2}{section*.23}}
+\backcite {pasterkamp1997respiratory}{{23}{2.3.2}{section*.23}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{23}{2.3.2}{section*.23}}
+\backcite {leng2015electronic, webster2010medical}{{23}{2.3.3}{subsection.2.3.3}}
+\backcite {webster2010medical}{{23}{2.3.3}{subsection.2.3.3}}
+\backcite {leng2015electronic}{{23}{2.3.3}{subsection.2.3.3}}
+\backcite {leng2015electronic}{{23}{2.3.3}{subsection.2.3.3}}
+\backcite {leng2015electronic, klum2019validation}{{23}{2.3.4}{subsection.2.3.4}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{24}{2.2}{table.caption.24}}
+\backcite {leng2015electronic, webster2010medical}{{24}{2.2}{table.caption.24}}
+\backcite {leng2015electronic, webster2010medical}{{24}{2.2}{table.caption.24}}
+\backcite {webster2010medical}{{24}{2.2}{table.caption.24}}
+\backcite {leng2015electronic}{{24}{2.2}{table.caption.24}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{24}{2.2}{table.caption.24}}
+\backcite {pasterkamp1997respiratory}{{24}{2.2}{table.caption.24}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{24}{2.2}{table.caption.24}}
+\backcite {pasterkamp1997respiratory, leng2015electronic}{{24}{2.2}{table.caption.24}}
+\backcite {eargle2004microphone, ballou2015handbook}{{25}{2.3.4}{subsection.2.3.4}}
+\backcite {klum2019validation, eargle2004microphone}{{25}{2.3.4}{subsection.2.3.4}}
+\backcite {leng2015electronic, ballou2015handbook}{{25}{2.3.4}{subsection.2.3.4}}
+\backcite {ballou2015handbook}{{25}{2.3.4}{section*.25}}
+\backcite {ballou2015handbook}{{25}{2.3.4}{section*.25}}
+\backcite {ballou2015handbook}{{25}{2.3.4}{section*.25}}
+\backcite {ballou2015handbook}{{25}{2.3.4}{section*.25}}
+\backcite {klum2019validation}{{25}{2.3.4}{section*.25}}
+\backcite {klum2019validation}{{26}{2.3.4}{section*.25}}
+\backcite {dayton2013daex25fhe}{{26}{2.2}{figure.caption.26}}
+\backcite {leng2015electronic}{{26}{2.3.4}{section*.27}}
+\backcite {eargle2004microphone}{{26}{2.3.4}{section*.27}}
+\backcite {eargle2004microphone}{{26}{2.3.4}{section*.27}}
+\backcite {leng2015electronic, klum2019validation, eargle2004microphone}{{26}{2.3.4}{section*.27}}
+\backcite {leng2015electronic, eargle2004microphone}{{27}{2.3.4}{section*.27}}
+\backcite {eargle2004microphone}{{27}{2.3}{figure.caption.28}}
+\backcite {ballou2015handbook}{{27}{2.3}{figure.caption.28}}
+\backcite {lewis2013mems}{{27}{2.3}{figure.caption.28}}
+\backcite {pasterkamp1997respiratory}{{28}{2.4.1}{subsection.2.4.1}}
+\backcite {klum2019validation}{{28}{2.4.1}{subsection.2.4.1}}
+\backcite {klum2019validation}{{28}{2.4.2}{subsection.2.4.2}}
+\backcite {klum2019validation}{{29}{2.4.2}{subsection.2.4.2}}
+\backcite {leng2015electronic}{{29}{2.4.2}{subsection.2.4.2}}
+\backcite {ertel1966stethoscope, leng2015electronic}{{29}{2.4.2}{subsection.2.4.2}}
+\backcite {klum2019validation}{{29}{2.4.3}{subsection.2.4.3}}
+\backcite {klum2019validation}{{34}{3.3.1}{subsection.3.3.1}}
+\backcite {zhang2022class}{{36}{3.3.1}{section*.33}}
+\backcite {duraij2021comparative}{{36}{3.3.1}{section*.33}}

@@ -1,0 +1,28 @@
+\chapter{Conclusion}
+
+The primary objective of this project was to design, implement, and validate an integrated, low-cost electromechanical testing platform capable of objectively characterizing the acoustic frequency response of medical stethoscopes. By combining structural-acoustic theory with embedded systems engineering, this work successfully transitioned stethoscope calibration from a subjective human listening exercise into a quantifiable digital framework.
+
+As demonstrated in the experimental results, the integration of a surface exciter, a tissue-simulating coupling phantom, and a high-speed ESP32 data pipeline successfully captured the frequency response of the instruments across the $20\text{ Hz}$ to $2000\text{ Hz}$ cardiopulmonary bandwidth. The system effectively bypassed the limitations of free-air acoustic testing by matching the mechanical impedance of the human thorax. Most importantly, the DSP pipeline proved capable of resolving extreme low-frequency biomarkers, such as the $20\text{ to }50\text{ Hz}$ ventricular gallops, which are the first to be masked by ambient noise when polyvinyl chloride (PVC) tubing degrades in clinical environments.
+
+Furthermore, the clinical discussion explored the critical difference between electronic calibration and acoustic testing. Because polymer leaching and material fatigue are irreversible chemical and physical processes, traditional stethoscopes cannot be mathematically tuned back to a baseline. Instead, the testing rig developed in this work serves as a vital diagnostic threshold tool. It alerts healthcare professionals to the silent, progressive acoustic degradation before it compromises patient safety. In doing so, this low-cost hardware approach offers a highly sustainable economic alternative to the wholesale replacement of hospital fleets with expensive digital stethoscopes.
+
+\section{Limitations}
+
+Despite the successful proof of concept and validation of the signal processing pipeline, the current hardware prototype exhibits specific analog signal conditioning and mechanical limitations that must be acknowledged:
+
+\begin{itemize}
+    \item \textbf{Automatic Gain Control (AGC) Compression:} The MAX9814 pre-amplifier module incorporates an internal AGC circuit designed to maximize microphone sensitivity while preventing hard clipping. While excellent for capturing faint biological sounds, the AGC dynamically compresses the amplitude of louder sinusoidal sweeps. This non-linear amplitude shifting complicates the calculation of an absolute, mathematically rigid transfer function, as the system artificially flattens the amplitude peaks during frequency sweeps.
+    \item \textbf{Single-Supply Amplification and Clipping:} The TDA2030A power amplifier module utilized in the prototype operates on a single positive voltage supply rail rather than a symmetrical dual-supply rail. When pushing the amplifier to drive high-amplitude low-frequency displacements through the exciter, the lack of a negative voltage rail limits the clean peak-to-peak swing of the alternating current (AC) waveform. This restricted headroom introduces harmonic distortion (clipping) at maximum excursion levels.
+    \item \textbf{Single-Channel Acquisition:} The current physical coupling mechanism is designed to test only one stethoscope eartip at a time. This approach assumes perfect binaural symmetry in the stethoscope headset. However, uneven tubing wear, a unilateral kink in the metal binaurals, or a single hardened eartip could cause unilateral acoustic attenuation that a single-channel test might fail to capture comprehensively.
+\end{itemize}
+
+\section{Future Work}
+
+To overcome the current limitations and elevate the prototype into a fully deployable clinical engineering tool, several hardware and software iterations are proposed for future development:
+
+\begin{itemize}
+    \item \textbf{Fixed-Gain Instrumentation Amplification:} Replacing the MAX9814 with a fixed-gain operational amplifier topology would eliminate the non-linear compression introduced by the AGC. This upgrade would ensure a strictly linear relationship between the acoustic pressure captured at the eartip and the voltage sampled by the microcontroller ADC, allowing for precise decibel (dB) attenuation calculations.
+    \item \textbf{Dual-Supply Power Stage:} Upgrading the power delivery system to include an inverted negative voltage rail would allow the TDA2030A to swing symmetrically below ground. This would drastically increase dynamic headroom, eliminate single-supply clipping, and minimize Total Harmonic Distortion (THD) during low-frequency, high-amplitude exciter drive phases.
+    \item \textbf{Binaural 3D-Printed Acoustic Coupler:} Designing and 3D-printing a custom binaural acoustic manifold would allow both eartips to be sealed and tested simultaneously. By routing two independent electret condenser microphones into a multi-channel ADC, the system could cross-reference the left and right acoustic pathways to detect unilateral obstructions or asymmetric eartip degradation.
+    \item \textbf{Machine Learning Classification:} With the Python Short-Time Fourier Transform (STFT) pipeline successfully visualizing the frequency response, future iterations could integrate automated machine learning classifiers. By feeding the extracted spectral density features into a predictive model, such as a Random Forest Classifier, the software could be trained on a dataset of intentionally degraded stethoscopes to automatically output a simple ``Pass'' or ``Fail'' diagnostic verdict for clinical engineering teams.
+\end{itemize}

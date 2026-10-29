@@ -1,15 +1,49 @@
-% Appendix A
+% Declare the start of the appendices (this changes chapter numbering to letters)
+\appendix
 
-\chapter{Título do Anexo} % Main appendix title
-\label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
+\chapter{ESP32 Data Acquisition}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Secção}
+This appendix contains the C++ firmware developed for the ESP32-WROOM-32D microcontroller. The software is responsible for the high-speed data acquisition stage of the stethoscope calibration rig.
 
-\lipsum[1]
+\section{Timer Interrupt and Serial Transmission}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Mais uma secção do Anexo~\ref{AppendixA}}
+The following script initializes a hardware timer interrupt to trigger a 12-bit Analog-to-Digital (ADC) conversion exactly every 50 microseconds. This guarantees a strict 20,000 Hz sampling rate. The acquired integer values are subsequently pushed to the serial buffer at a baud rate of 500,000 bps to prevent data bottlenecking.
 
-\lipsum[1]
+\begin{lstlisting}[language=C++, caption={ESP32 firmware for 20 kHz hardware timer ADC sampling and high-speed UART transmission.}, label={lst:esp32_firmware}]
+#include <Arduino.h>
 
+// Define hardware pins
+const int adcPin = 34; // Connect to MAX9814 AC-coupled output
+hw_timer_t * timer = NULL;
+volatile bool sampleFlag = false;
+
+// Interrupt Service Routine (ISR) triggered every 50us
+void IRAM_ATTR onTimer() {
+  sampleFlag = true;
+}
+
+void setup() {
+  // Initialize UART at 500,000 baud
+  Serial.begin(500000);
+  
+  // Set ADC resolution to 12-bit (0-4095)
+  analogReadResolution(12);
+  
+  // Configure hardware timer (Prescaler 80 = 1us ticks)
+  timer = timerBegin(0, 80, true);
+  timerAttachInterrupt(timer, &onTimer, true);
+  
+  // Set alarm to trigger every 50 microseconds (20 kHz sampling)
+  timerAlarmWrite(timer, 50, true);
+  timerAlarmEnable(timer);
+}
+
+void loop() {
+  if (sampleFlag) {
+    sampleFlag = false;
+    // Read ADC and transmit as raw integer
+    int adcValue = analogRead(adcPin);
+    Serial.println(adcValue);
+  }
+}
+\end{lstlisting}
