@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.10.21)  29 OCT 2026 20:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.10.21)  29 OCT 2026 21:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1906,13 +1906,10 @@ Underfull \hbox (badness 1430) in paragraph at lines 30--30
 \T1/lmr/m/it/12 and Com-po-nent Guide\T1/lmr/m/n/12 , 2024.  [On-line]. Avail-able: []$\T1/lmtt/m/n/12 https : / / www .
  []
 
-[56]) [57]
+) [56]
 \openout2 = `chapters/appendixA.aux'.
 
- (./chapters/appendixA.tex [58
-
-
-]
+ (./chapters/appendixA.tex
 Appendix A.
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
@@ -1920,19 +1917,22 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 ) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-) [59]) [60]
+) [57
+
+
+]) [58]
 \openout2 = `chapters/appendixB.aux'.
 
  (./chapters/appendixB.tex
 Appendix B.
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-) [61
+) [59
 
 
 
 
-] [62]) [63] (./main.aux (./front/title.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/appendixA.aux) (./chapters/appendixB.aux))
+] [60]) [61] (./main.aux (./front/title.aux) (./front/3_abstract.aux) (./front/4_frontmatterlists.aux) (./chapters/chapter1.aux) (./chapters/chapter2.aux) (./chapters/chapter3.aux) (./chapters/chapter4.aux) (./chapters/chapter5.aux) (./chapters/appendixA.aux) (./chapters/appendixB.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1943,18 +1943,18 @@ Package rerunfilecheck Info: File `main.brf' has not changed.
 (rerunfilecheck)             Checksum: 3E9551861E6C263E66351BA3F06D1C31;8471.
  ) 
 Here is how much of TeX's memory you used:
- 67572 strings out of 469495
- 1628411 string characters out of 5470097
- 2918036 words of memory out of 5000000
+ 67570 strings out of 469495
+ 1628397 string characters out of 5470097
+ 2918227 words of memory out of 5000000
  94998 multiletter control sequences out of 15000+600000
  770205 words of font info for 134 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 101i,20n,120p,2576b,3005s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,20n,113p,2576b,3005s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (79 pages, 4815161 bytes).
+Output written on main.pdf (77 pages, 4814516 bytes).
 PDF statistics:
- 1388 PDF objects out of 1440 (max. 8388607)
- 1228 compressed objects within 13 object streams
- 307 named destinations out of 1000 (max. 500000)
+ 1378 PDF objects out of 1440 (max. 8388607)
+ 1220 compressed objects within 13 object streams
+ 305 named destinations out of 1000 (max. 500000)
  566 words of extra memory for PDF output out of 10000 (max. 10000000)
 

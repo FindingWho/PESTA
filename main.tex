@@ -84,8 +84,12 @@ english,		% Select document language, options: portuguese, english
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Print the bibliographic references using the ieeetr format from the 'sampleRefs.bib' file (root folder)
-
+\begingroup
+\setlength{\parskip}{0pt}
+  % 2. Restaura o espaçamento padrão entre itens (opcional, ajuste se necessário)
+  \setlength{\parsep}{0pt}
 \printreferences{sampleRefs}		% Change the 'sampleRefs' name to match your .bib file name,
+\endgroup
 								% a good option to make bib files is https://www.jabref.org/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appendices}
